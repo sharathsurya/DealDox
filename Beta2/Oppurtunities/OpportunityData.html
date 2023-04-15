@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Design</title>
+    <link rel="stylesheet" href="../Required/Style.css">
+    <link rel="stylesheet" href="exceldownloadcss.css">
+    <link rel="stylesheet" href="OpportunityData.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.6.3.js"></script> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="navandbread">
+        <nav>
+            <div class="search">
+                <div class="icon"></div>
+                <div class="input">
+                    <input type="text" placeholder="Search..." id="mysearch">
+                </div>
+                <span class="clear" onclick="document.getElementById('mysearch').value=''"></span>
+            </div>
+            <!-- <div class="search-bar">
+        <input type="text" placeholder="search....">
+        <a href=""><li class="fas fa-search"></li></a>
+        </div>-->
+            <div class="navset">
+                <span style="margin-right: 30px;"><a href="#"><button
+                            style="padding-top: 4px;font-family: 'Courier New';font-weight: bold;">DEFAULT</button></a></span>
+                <span class="icon"><a href="#"><i class="fas fa-clock"
+                            style="font-size:20px;color: azure;margin-right: 31px;"></i></a></span>
+                <span class="icon"><a href="#"><i class="fa fa-bell"
+                            style="font-size:20px;color: azure; margin-right: 31px;"></i></a></span>
+                <div class="dropdown">
+                    <li onclick="myFunction()" class="fa fa-user"
+                        style="font-size:20px;color: azure; margin-right: 20px;"></li>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="../Profile/MyProfile.html">My Profile</a>
+                        <a href="#about">What's New?</a>
+                        <a href="#contact">Logout BMC Software</a>
+                    </div>
+                </div>
+        </nav>
+        <div class="bread">
+            <ul class="breadcrumbs" style="padding: 10px;">
+                <li class="breadcrumbs--item">
+                    <a href="index.html" class="breadcrumbs--link breadcrumbs"
+                        style="display:inline;text-decoration:none">HOME</a>
+
+                <li class="breadcrumbs--item">
+                    <a href="../Accounts/Accounts.html" class="breadcrumbs--link breadcrumbs--link--active">ACCOUNTS</a>
+
+                    <!-- </li> <li class="breadcrumbs--item">
+            <a href="#" class="breadcrumbs--link">QUOTES</a>
+        </li> -->
+
+                    <!-- <a href="#" style="margin-left: 1020px;"><i class="fa fa-pen"
+                            style="border:1px solid black;padding:7px;background-color: #216c98;font-size: 17px; border: none;color: white;"></i></a> -->
+
+                    <!-- <a href="AccontsListing.html" style="text-decoration: none;color: black;"><i class="fa fa-table"
+                            style="border:1px solid black;padding:7px;font-size: 17px;border: none;"></i></a> -->
+                </li>
+            </ul>
+            <hr class="hr" style="height:1.5px">
+        </div>
+    </div>
+    <div class="content-bar" style="top:68px;">
+        <ul>
+            <a href="../Home/Home.html">
+                <li>
+                    <span class="icon"><i class="fas fa-home"></i></span>
+                    <span class="item">HOME</span>
+                </li>
+            </a>
+            <a href="../Accounts/Accounts.html">
+                <li class="active1">
+                    <span class="icon"><i class="fa-solid fa-book-open"></i></span>
+                    <span class="item">ACCOUNTS</span>
+                </li>
+            </a>
+            <a href="Quotes.html">
+                <li>
+                    <span class="icon"><i class="fa fa-dollar"></i></span>
+                    <span class="item">QUOTES</span>
+                </li>
+            </a>
+            <a href="Demand.html">
+                <li>
+                    <span class="icon"><i class="fa fa-user"></i></span>
+                    <span class="item">DEMAND</span>
+                </li>
+            </a>
+            <a href="Forecast.html">
+                <li>
+                    <span class="icon"><i class="fa fa-line-chart"></i></span>
+                    <span class="item">FORECAST</span>
+                </li>
+            </a>
+            <a href="../Catalog/Catalog.html">
+                <li>
+                    <span class="icon"><i class="fa fa-eye"></i></span>
+                    <span class="item">CATALOG</span>
+                </li>
+            </a>
+            <a href="../People/People.html">
+                <li>
+                    <span class="icon"><i class="fa fa-cog"></i></span>
+                    <span class="item">ADMIN</span>
+                </li>
+            </a>
+        </ul>
+    </div>
+    <div>
+        <div class="helpbox" style="z-index: 2;">
+            <button><a href="#divOne" class="button1"><img src="../Required/HelpIcon.png" alt="Icon"
+                        style="height:35px;width:35px;"></a></button>
+        </div>
+        <div class="overlay" id="divOne">
+            <div class="wrapper">
+                <p class="head">LOG A SUPPORT REQUEST</p><br>
+                <a href="#" class="close">&times;</a>
+                <div class="content">
+                    <div class="container1">
+                        <form>
+
+                            <label>Summary:</label>
+                            <input type="text" class="help-input">
+                            <label>Description:</label>
+                            <textarea rows="8" cols=""></textarea>
+                            <label>Priority(0ptional):</label><br>
+                            <select name="priority" id="format">
+                                <option selected disabled>Select..</option>
+                                <option value="critical">Critical</option>
+                                <option value="high">High</option>
+                                <option value="medium">Medium</option>
+                                <option value="low">Low</option>
+                                <option value="lowest">Lowest</option>
+                            </select><br><br>
+                            <label>Attachment(optional):</label><br>
+                            <input type="file"><br><br>
+                            <label>Your contact e-mail:</label><br>
+                            <input type="email" class="em"><br><br>
+                            <input type="submit" value="Send">
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--new opportunity data -->
+    <div id="main">
+        <div class="submain">
+            <!-- <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button> -->
+            <button class="openbtn" onclick="openClose()">
+                <i class="fa-light fa-less-than" style="color: white;"></i></button>
+        </div>
+        <div class="opportunitydata">
+            <form>
+                <div id="opportunitiesheader1"><a>OPPORTUNITY : ${model}</a></div>
+                <div class="dataleft">
+                    <div class="containerD1">
+                        <div id="contentD1">
+                            <input class="" type="text">
+                            <label>OPPORTUNITY</label>
+                        </div>
+                    </div>
+                    <div class="containerD2">
+                        <div id="contentD2">
+                            <input class="" type="text" placeholder="">
+                            <label>PARENT OPPORTUNITY</label>
+                        </div>
+                    </div>
+                    <div class="containerD3">
+                        <div id="contentD3">
+                            <input class="" type="text">
+                            <label>ACCOUNT</label>
+                        </div>
+                        <div id="contentD3A">
+                            <select>
+                                <option selected disabled></option>
+                                <option>CONSULTING SERVICES OPPORTUNITY</option>
+                                <option>EDUCATION SERVICES OPPORTUNITY</option>
+                            </select>
+                            <label>OPPORTUNITY TYPE</label>
+                        </div>
+                    </div>
+                    <div class="containerD4">
+                        <div id="contentD4">
+                            <select required>
+                                <option selected disabled></option>
+                                <option>QULIFY</option>
+                                <option>SCOPE</option>
+                                <option>GO NO-GO</option>
+                                <option>VALIDATE SOLUTION</option>
+                                <option>BUSINESS CASE</option>
+                                <option>NEGOTIATE & CLOSE</option>
+                                <option>DISCOVERY</option>
+                                <option>CLOSED-NO SALE</option>
+                            </select>
+                            <label>STAGE</label>
+                        </div>
+                        <div id="contentD4">
+                            <select>
+                                <option selected disabled></option>
+                                <option>CONFIDENTIAL</option>
+                                <option>DEFAULT</option>
+                            </select>
+                            <label>PERMISSION TYPE</label>
+                        </div>
+                    </div>
+                    <div class="containerD5">
+                        <div id="contentD5">
+                            <input type="text">
+                            <label>PROBABILITY</label>
+                        </div>
+                        <div id="contentD5">
+                            <input type="text" onfocus="(this.type='date')">
+                            <label>CLOSE</label>
+                        </div>
+                        <div id="contentD5">
+                            <input type="text" onfocus="(this.type='date')">
+                            <label>START</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="dataright">
+                    <div class="containerD6">
+                        <div id="contentD6">
+                            <input class="" type="number" min="0" placeholder="$0.00">
+                            <label>NET PRICE</label>
+                        </div>
+                        <div id="contentD6">
+                            <input class="" type="number" min="0%" placeholder="0%">
+                            <label>MARGIN</label>
+                        </div>
+                    </div>
+                    <div class="containerD7">
+                        <div id="contentD7">
+                            <input class="" type="number" min="0" placeholder="$0.00">
+                            <label>COST</label>
+                        </div>
+                        <div id="contentD7">
+                            <input class="" type="number" min="0%" placeholder="">
+                            <label>WEEKS</label>
+                        </div>
+                    </div>
+                    <div class="containerD8">
+                        <div id="contentD8">
+                            <input class="" type="number" min="0" placeholder="">
+                            <label>LIST PRICE</label>
+                        </div>
+                        <div id="contentD8">
+                            <input class="" type="number" min="0%" placeholder="">
+                            <label>DISCOUNT</label>
+                        </div>
+                    </div>
+                    <div class="containerD9">
+                        <div id="contentD9">
+                            <input class="" type="number" min="0" placeholder="">
+                            <label>HOURS</label>
+                        </div>
+                        <div id="contentD9">
+                            <input class="" type="number" min="0%" placeholder="">
+                            <label>AVG RATE</label>
+                        </div>
+                    </div>
+                    <div class="containerD10">
+                        <div id="contentD10">
+                            <select>
+                                <option selected disabled></option>
+                                <option>AFRICA</option>
+                                <option>ALL OTHER AP</option>
+                                <option>AP-ALL OTHER</option>
+                                <option>AP-AUS/JP</option>
+                                <option>AP-CHINA</option>
+                                <option>AP-INDIA</option>
+                                <option>ARGENTINA</option>
+                                <option>AUSTRALIA</option>
+                            </select>
+                            <label>ORG</label>
+                        </div>
+                        <div id="contentD10">
+                            <select id="currency" name="currency">
+                                <option selected disabled></option>
+                                <option value="AFN">Afghan Afghani</option>
+                                <option value="ALL">Albanian Lek</option>
+                                <option value="DZD">Algerian Dinar</option>
+                                <option value="AOA">Angolan Kwanza</option>
+                                <option value="ARS">Argentine Peso</option>
+                                <option value="AMD">Armenian Dram</option>
+                                <option value="AWG">Aruban Florin</option>
+                                <option value="AUD">Australian Dollar</option>
+                                <option value="AZN">Azerbaijani Manat</option>
+                                <option value="BSD">Bahamian Dollar</option>
+                                <option value="BHD">Bahraini Dinar</option>
+                                <option value="BDT">Bangladeshi Taka</option>
+                                <option value="BBD">Barbadian Dollar</option>
+                                <option value="BYR">Belarusian Ruble</option>
+                                <option value="BEF">Belgian Franc</option>
+                                <option value="BZD">Belize Dollar</option>
+                                <option value="BMD">Bermudan Dollar</option>
+                                <option value="BTN">Bhutanese Ngultrum</option>
+                                <option value="BTC">Bitcoin</option>
+                                <option value="BOB">Bolivian Boliviano</option>
+                                <option value="BAM">Bosnia-Herzegovina Convertible Mark</option>
+                                <option value="BWP">Botswanan Pula</option>
+                                <option value="BRL">Brazilian Real</option>
+                                <option value="GBP">British Pound Sterling</option>
+                                <option value="BND">Brunei Dollar</option>
+                                <option value="BGN">Bulgarian Lev</option>
+                                <option value="BIF">Burundian Franc</option>
+                                <option value="KHR">Cambodian Riel</option>
+                                <option value="CAD">Canadian Dollar</option>
+                                <option value="CVE">Cape Verdean Escudo</option>
+                                <option value="KYD">Cayman Islands Dollar</option>
+                                <option value="XOF">CFA Franc BCEAO</option>
+                                <option value="XAF">CFA Franc BEAC</option>
+                                <option value="XPF">CFP Franc</option>
+                                <option value="CLP">Chilean Peso</option>
+                                <option value="CNY">Chinese Yuan</option>
+                                <option value="COP">Colombian Peso</option>
+                                <option value="KMF">Comorian Franc</option>
+                                <option value="CDF">Congolese Franc</option>
+                                <option value="CRC">Costa Rican ColÃ³n</option>
+                                <option value="HRK">Croatian Kuna</option>
+                                <option value="CUC">Cuban Convertible Peso</option>
+                                <option value="CZK">Czech Republic Koruna</option>
+                                <option value="DKK">Danish Krone</option>
+                                <option value="DJF">Djiboutian Franc</option>
+                                <option value="DOP">Dominican Peso</option>
+                                <option value="XCD">East Caribbean Dollar</option>
+                                <option value="EGP">Egyptian Pound</option>
+                                <option value="ERN">Eritrean Nakfa</option>
+                                <option value="EEK">Estonian Kroon</option>
+                                <option value="ETB">Ethiopian Birr</option>
+                                <option value="EUR">Euro</option>
+                                <option value="FKP">Falkland Islands Pound</option>
+                                <option value="FJD">Fijian Dollar</option>
+                                <option value="GMD">Gambian Dalasi</option>
+                                <option value="GEL">Georgian Lari</option>
+                                <option value="DEM">German Mark</option>
+                                <option value="GHS">Ghanaian Cedi</option>
+                                <option value="GIP">Gibraltar Pound</option>
+                                <option value="GRD">Greek Drachma</option>
+                                <option value="GTQ">Guatemalan Quetzal</option>
+                                <option value="GNF">Guinean Franc</option>
+                                <option value="GYD">Guyanaese Dollar</option>
+                                <option value="HTG">Haitian Gourde</option>
+                                <option value="HNL">Honduran Lempira</option>
+                                <option value="HKD">Hong Kong Dollar</option>
+                                <option value="HUF">Hungarian Forint</option>
+                                <option value="ISK">Icelandic KrÃ³na</option>
+                                <option value="INR">Indian Rupee</option>
+                                <option value="IDR">Indonesian Rupiah</option>
+                                <option value="IRR">Iranian Rial</option>
+                                <option value="IQD">Iraqi Dinar</option>
+                                <option value="ILS">Israeli New Sheqel</option>
+                                <option value="ITL">Italian Lira</option>
+                                <option value="JMD">Jamaican Dollar</option>
+                                <option value="JPY">Japanese Yen</option>
+                                <option value="JOD">Jordanian Dinar</option>
+                                <option value="KZT">Kazakhstani Tenge</option>
+                                <option value="KES">Kenyan Shilling</option>
+                                <option value="KWD">Kuwaiti Dinar</option>
+                                <option value="KGS">Kyrgystani Som</option>
+                                <option value="LAK">Laotian Kip</option>
+                                <option value="LVL">Latvian Lats</option>
+                                <option value="LBP">Lebanese Pound</option>
+                                <option value="LSL">Lesotho Loti</option>
+                                <option value="LRD">Liberian Dollar</option>
+                                <option value="LYD">Libyan Dinar</option>
+                                <option value="LTL">Lithuanian Litas</option>
+                                <option value="MOP">Macanese Pataca</option>
+                                <option value="MKD">Macedonian Denar</option>
+                                <option value="MGA">Malagasy Ariary</option>
+                                <option value="MWK">Malawian Kwacha</option>
+                                <option value="MYR">Malaysian Ringgit</option>
+                                <option value="MVR">Maldivian Rufiyaa</option>
+                                <option value="MRO">Mauritanian Ouguiya</option>
+                                <option value="MUR">Mauritian Rupee</option>
+                                <option value="MXN">Mexican Peso</option>
+                                <option value="MDL">Moldovan Leu</option>
+                                <option value="MNT">Mongolian Tugrik</option>
+                                <option value="MAD">Moroccan Dirham</option>
+                                <option value="MZM">Mozambican Metical</option>
+                                <option value="MMK">Myanmar Kyat</option>
+                                <option value="NAD">Namibian Dollar</option>
+                                <option value="NPR">Nepalese Rupee</option>
+                                <option value="ANG">Netherlands Antillean Guilder</option>
+                                <option value="TWD">New Taiwan Dollar</option>
+                                <option value="NZD">New Zealand Dollar</option>
+                                <option value="NIO">Nicaraguan CÃ³rdoba</option>
+                                <option value="NGN">Nigerian Naira</option>
+                                <option value="KPW">North Korean Won</option>
+                                <option value="NOK">Norwegian Krone</option>
+                                <option value="OMR">Omani Rial</option>
+                                <option value="PKR">Pakistani Rupee</option>
+                                <option value="PAB">Panamanian Balboa</option>
+                                <option value="PGK">Papua New Guinean Kina</option>
+                                <option value="PYG">Paraguayan Guarani</option>
+                                <option value="PEN">Peruvian Nuevo Sol</option>
+                                <option value="PHP">Philippine Peso</option>
+                                <option value="PLN">Polish Zloty</option>
+                                <option value="QAR">Qatari Rial</option>
+                                <option value="RON">Romanian Leu</option>
+                                <option value="RUB">Russian Ruble</option>
+                                <option value="RWF">Rwandan Franc</option>
+                                <option value="SVC">Salvadoran ColÃ³n</option>
+                                <option value="WST">Samoan Tala</option>
+                                <option value="SAR">Saudi Riyal</option>
+                                <option value="RSD">Serbian Dinar</option>
+                                <option value="SCR">Seychellois Rupee</option>
+                                <option value="SLL">Sierra Leonean Leone</option>
+                                <option value="SGD">Singapore Dollar</option>
+                                <option value="SKK">Slovak Koruna</option>
+                                <option value="SBD">Solomon Islands Dollar</option>
+                                <option value="SOS">Somali Shilling</option>
+                                <option value="ZAR">South African Rand</option>
+                                <option value="KRW">South Korean Won</option>
+                                <option value="XDR">Special Drawing Rights</option>
+                                <option value="LKR">Sri Lankan Rupee</option>
+                                <option value="SHP">St. Helena Pound</option>
+                                <option value="SDG">Sudanese Pound</option>
+                                <option value="SRD">Surinamese Dollar</option>
+                                <option value="SZL">Swazi Lilangeni</option>
+                                <option value="SEK">Swedish Krona</option>
+                                <option value="CHF">Swiss Franc</option>
+                                <option value="SYP">Syrian Pound</option>
+                                <option value="STD">São Tomé and Príncipe Dobra</option>
+                                <option value="TJS">Tajikistani Somoni</option>
+                                <option value="TZS">Tanzanian Shilling</option>
+                                <option value="THB">Thai Baht</option>
+                                <option value="TOP">Tongan pa'anga</option>
+                                <option value="TTD">Trinidad & Tobago Dollar</option>
+                                <option value="TND">Tunisian Dinar</option>
+                                <option value="TRY">Turkish Lira</option>
+                                <option value="TMT">Turkmenistani Manat</option>
+                                <option value="UGX">Ugandan Shilling</option>
+                                <option value="UAH">Ukrainian Hryvnia</option>
+                                <option value="AED">United Arab Emirates Dirham</option>
+                                <option value="UYU">Uruguayan Peso</option>
+                                <option value="USD">US Dollar</option>
+                                <option value="UZS">Uzbekistan Som</option>
+                                <option value="VUV">Vanuatu Vatu</option>
+                                <option value="VEF">Venezuelan BolÃ­var</option>
+                                <option value="VND">Vietnamese Dong</option>
+                                <option value="YER">Yemeni Rial</option>
+                                <option value="ZMK">Zambian Kwacha</option>
+                            </select>
+                            <label>CURRENCY</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--OPPORTUNITY DETAILS  -->
+        <div class="opportunitydetails">
+            <form action="#">
+                <div class="leftdetail">
+                    <button type="button" class="bbtndetails" onclick="myfunctionData()" id="clickmedetails">
+                        <b>DETAILS &nbsp; <span class="fa fa-angle-down"></span></b></button>
+                    <div id="oppodetails" class="hidden1">
+                        <div class="containerD11">
+                            <div id="contentD11">
+                                <textarea placeholder="Enter Description"></textarea>
+                                <label>DESCRIPTION</label>
+                            </div>
+                            <div class="containerDleft">
+                                <div id="contentD12">
+                                    <input type="text">
+                                    <label>OWNER</label>
+                                </div>
+                                <div id="contentD12">
+                                    <select>
+                                        <option selected disabled></option>
+                                        <option>NO RESULT FOUND</option>
+                                    </select>
+                                    <label>DELIVERY MANAGER</label>
+                                </div>
+                                <div id="contentD13">
+                                    <input type="text" onfocus="(this.type='date')">
+                                    <label>DUE DATE</label>
+                                </div>
+                                <div id="contentD14">
+                                    <select>
+                                        <option selected disabled></option>
+                                        <option>REQUESTED</option>
+                                        <option>IN PROGRESS</option>
+                                        <option>ON HOLD</option>
+                                        <option>SUBMITTED</option>
+                                        <option>REJECTED</option>
+                                        <option>APPROVED</option>
+                                    </select>
+                                    <label>STATUS</label>
+                                </div>
+                            </div>
+                            <div class="containerDright">
+                                <div id="contentD15">
+                                    <select required>
+                                        <option selected disabled></option>
+                                        <option value="">AP</option>
+                                        <option value="">EMEA</option>
+                                        <option value="">LA</option>
+                                        <option value="">NA</option>
+                                    </select>
+                                    <label>REGION</label>
+                                </div>
+                                <div id="contentD15">
+                                    <select required>
+                                        <option selected disabled></option>
+                                        <option value="">BANKING</option>
+                                        <option value="">CHEMICALS</option>
+                                        <option value="">CONSTRUCTION & ENGG</option>
+                                        <option value="">COSULTING SERVICES</option>
+                                        <option value="">CONSUMER PRODUCTS</option>
+                                        <option value="">EDUCATION</option>
+                                        <option value="">ENTERTAINMENT & LEISURE</option>
+                                        <option value="">FINANCIAL SERVICES</option>
+                                    </select>
+                                    <label>VERTICAL</label>
+                                </div>
+                                <div id="contentD16">
+                                    <select required>
+                                        <option selected disabled></option>
+                                        <option value="">DBA</option>
+                                        <option value="">DSOM</option>
+                                        <option value="">EDUCATION</option>
+                                        <option value="">IZOT</option>
+                                    </select>
+                                    <label>PRACTICE</label>
+                                </div>
+                                <div id="contentD17">
+                                    <select required>
+                                        <option selected disabled></option>
+                                        <option value="">BMC DEAL REVIEW REPORT</option>
+                                        <option value="">BMC DEAL REVIEW REPORT-MULTI WORKSTREAM/CCO</option>
+                                        <option value="">BMC ENGAGEMENT SUMMARY</option>
+                                        <option value="">BMC EXPERT SERVICES SOW</option>
+                                        <option value="">BMC FRAMEWORK SOW-SINGLE WORKSTREAM </option>
+                                        <option value="">BMC SURVEY REVIEW-CTM IMPL.</option>
+                                        <option value="">EDU DIFF REGION</option>
+                                        <option value="">EDUCATION APPROVAL TEMPLATE</option>
+                                        <option value="">EDUCATION ORDER SUMMARY DOCUMENT</option>
+                                        <option value="">EDUCATION QUOTE</option>
+                                        <option value="">GARY TEST</option>
+                                        <option value="">ORDER SERVICES OPENAIR REPORT</option>
+                                    </select>
+                                    <label>TEMPLATE QUOTE</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- billing and shipping address in opportunitydata -->
+        <div class="containerBS">
+            <div class="left1" onclick="myfunctionA()"> <button type="button" class="bbtn" id="clickme">
+                    <b>BILLING ADDRESS &nbsp; <span class="fa fa-angle-down"></span></b></button>
+                <div id="billOne" class="hidden">
+                    <div class="content9BS">
+                        <div class="street1BS">
+                            <input class="billingBS" type="text" placeholder="" required>
+                            <label>STREET-1</label>
+                        </div>
+
+                        <!-- </div>  <div class="content9BS"> -->
+                        <div class="street2BS">
+                            <input class="billingBS" type="text" placeholder="" required>
+                            <label>STREET-2</label>
+                        </div>
+                    </div>
+                    <div class="content9BS">
+                        <div class="street1BS">
+                            <input class="billingBS" type="text" placeholder="" required>
+                            <label>CITY</label>
+                        </div>
+                        <!-- </div>  <div class="content9BS"> -->
+                        <div class="street2BS">
+                            <input class="billingBS" type="text" placeholder="" required>
+                            <label>STATE</label>
+                        </div>
+                    </div>
+                    <div class="content9BS">
+                        <div class="street1BS">
+                            <input class="billingBS" type="number" placeholder="" required> <label>ZIP</label>
+                        </div>
+                        <!-- </div>  <div class="content9BS"> -->
+                        <div class="street2BS">
+                            <input class="billingBS" type="text" placeholder="" required>
+                            <label>COUNTRY</label>
+                        </div>
+                    </div>
+                    <div class="content9BS"> <input id="pnoBS" class="billingBS" type="number" placeholder=""
+                            style="margin-left: 0.9%;" required>
+                        <label>PHONE</label>
+                    </div>
+                </div>
+            </div>
+            <div class="right1"> <button type="button" onclick="myfunctionB()" class="sbtn" id="clikhere">
+                    <b>SHIPPING ADDRESS &nbsp;<span class="fa fa-angle-down"></span></b></button>
+                <div id="ship" class="hidden">
+                    <div class="content10BS">
+                        <div class="street1BS">
+                            <input class="billingBS" type="text" placeholder="" required>
+                            <label id="l1">STREET-1</label>
+                        </div>
+                        <!-- <div class="content10BS"> -->
+                        <div class="street2BS"> <input class="billingBS" type="text" placeholder="" required>
+                            <label>STREET-2</label>
+                        </div>
+                    </div>
+                    <div class="content10BS">
+                        <div class="street1BS">
+                            <input class="billingBS" type="text" placeholder="" required> <label>CITY</label>
+                        </div>
+                        <!-- </div>  <div class="content10BS"> -->
+                        <div class="street2BS">
+                            <input class="billingBS" type="text" placeholder="" required>
+                            <label>STATE</label>
+                        </div>
+                    </div>
+                    <div class="content10BS">
+                        <div class="street1BS">
+                            <input class="billingBS" id="zip" type="number" placeholder="" required>
+                            <label>ZIP</label>
+                        </div>
+                        <!-- </div>  <div class="content10BS"> -->
+                        <div class="street2BS">
+                            <input class="billingBS" type="text" placeholder="" required>
+                            <label>COUNTRY</label>
+                        </div>
+                    </div>
+                    <div class="content10BS"> <input id="pnoBS" class="billingBS" type="number" placeholder=""
+                            style="margin-left: 0.9%;" required>
+                        <label>PHONE</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- opportunity quote table -->
+        <div class="total">
+            <div class="downloadandreload">
+                <div class="downloadquotes">
+                    <button class="xlbutton1" onclick="exportData1()">
+                        <span class="fa fa-file-excel-o"></span></button>
+                    <div>
+                        <label>DOWNLOAD</label>
+                    </div>
+                </div>
+                <div class="quoteshead">
+                    <b>QUOTES</b>
+                </div>
+                <div class="reload">
+                    <span class="fa fa-refresh"></span>
+                    <div>
+                        <label>RELOAD</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="listquotes">
+            <form>
+                <table id="tblStocksQuotes" cellpadding="0" cellspacing="0">
+                    <tr class="ellipsisquotes">
+                        <th>PRIMARY</th>
+                        <th>STATUS</th>
+                        <th>QUOTE</th>
+                        <th>DESCRIPTION</th>
+                        <th>LAST EDITED</th>
+                        <th>BY</th>
+                        <th>NET PRICE</th>
+                        <th>MARGIN</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>98</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>A</td>
+                        <td>B</td>
+                        <td>C</td>
+                        <td>D</td>
+                        <td>E</td>
+                        <td>F</td>
+                        <td>G</td>
+                        <td>H</td>
+                    </tr>
+                    <tr>
+                        <td>J</td>
+                        <td>K</td>
+                        <td>L</td>
+                        <td>M</td>
+                        <td>N</td>
+                        <td>O</td>
+                        <td>P</td>
+                        <td>Q</td>
+                    </tr>
+                </table>
+                <br />
+
+                <div class="plus-quotes">
+                    <a href="../Quotes/Quotescreation.html"><i class="fa fa-plus"></i></a>
+                </div>
+                <!-- delete opportunity -->
+                <div class="deleteoppo">
+
+                    <a class="delete" href="#">DELETE OPPORTUNITY</a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div id="mySidebar" class="sidebar">
+        <div class="navside">
+             <button class="dropdown-btn" id="sidetoggle1">BID TEAM <i class="fa fa-angle-down"
+                    style="color: black; font-size: 20px; float: right;"></i>
+            </button>
+            <div class="dropdown-container">
+                <p>${model}-ownerName</p>
+                <form action="">
+                    <input type="search" name="ownerName" id="oname" placeholder="Enter Name to be searched" required />
+                    <input type="submit" id="search" hidden>
+                    <label for="search"><i class="fa-solid fa-check"></i></label>
+                </form>
+            </div>
+        </div>
+        <div class="navside">
+            <button class="dropdown-btn" id="sidetoggle">FILES<i class="fa fa-angle-down"
+                    style="color: black; font-size: 20px; float: right;"></i>
+            </button>
+            <div class="dropdown-container">
+                <ul id="todo-list">
+                </ul>
+                <form action="">
+                    <input type="file" id="upload-file" multiple onchange="updateList()" />
+                        <!-- accept=".pdf, .jpg, .jpeg, .xlsx"> -->
+                    <label for="upload-file" id="pluzlabel"><i class="fa fa-plus"
+                            style="color:#045679;"></i></label>
+                    <button id="upload-btn" type="submit"><i class="fa-solid fa-check"></i></button>
+                    <div id="fileList">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <div class="navside"> <button class="dropdown-btn" id="sidetoggle1">NOTES <i class="fa fa-angle-down"
+                    style="color: black; font-size: 20px; float: right;"></i>
+            </button>
+            <div class="dropdown-container">
+                <form action=""><input type="text" name="new" id="send" placeholder="Type your Note" /><button
+                        id="sent1"><i class='fa fa-send-o blue-color' style="color: #045679;"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="navside">
+            <button class="dropdown-btn" id="sidetoggle2">EXTERNAL REFERENCES
+                <i class="fa fa-angle-down" style="color: black; font-size: 20px; float: right;"></i>
+
+            </button>
+            <div class="dropdown-container">
+                <form action=""><input type="text" name="id" id="eid" value="$model"><label for="" id="lab">EXTERNAL
+                        REFERENCES ID</label><br>
+                    <input type="text" name="id" id="eid2" value="$model">
+                    <label for="" id="lab">EXTERNAL REFERENCES ID 2</label>
+                    <!-- <br><input type="text" name="id" id="cfid" value="$model"><label for="" id="lab">CRM
+                        REFERENCE</label> -->
+                </form>
+            </div>
+        </div>
+        <div class="navside"> <button class="dropdown-btn" id="sidetoggle3">TIMESTAMP
+                <i class="fa fa-angle-down" style="color: black; font-size: 20px; float: right;"></i>
+
+            </button>
+            <div class="side-container"> <span id="time">CREATED BY:</span><span id="time1">${model}</span><br>
+
+                <hr id="lhr"> <span id="time">CREATED:</span><span id="time1">${model}</span><br>
+                <hr id="lhr"> <span id="time">LAST MODIFIED BY:</span><span id="time1">${model}</span><br>
+
+                <hr id="lhr"> <span id="time">LAST MODIFIED</span><span id="time1">${model}</span><br>
+                <hr id="lhr"> <span id="time">REVISION</span><span id="time1">${model}</span><br>
+            </div>
+        </div>
+        <!-- Link And Internal ID Nav Option  -->
+        <!-- <div class="navside">
+            <button class="dropdown-btn" id="sidetoggle4">INTERNAL ID <i class="fa fa-angle-down"
+                    style="color: 1px solid black; font-size: 20px; float: right;"></i>
+            </button>
+            <div class="dropdown-container">
+                <div class="txt">
+                    <p id="text-to-copy"><a href="https://chat.openai.com/chat" style="font-size: 13px;"
+                            target="_blank">file:///C:/Usfyugfgsyugfsgfgsdugfdyusfdhfdhdhfchdrfdhjavxjvgsugdguzlivdshiuvdhlihvihvjhvhdasdddsfegesrhytryu6trdujiy</a>
+                    </p>
+                </div>
+                <div class="bnt"><button id="cpbtn" onclick="copyText()"><i class="fa fa-clone"
+                            style="font-size:15px; z-index: 2;"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="navside"> <button class="dropdown-btn" id="sidetoggle5">LINK
+                <i class="fa fa-angle-down" style="color: black; font-size: 20px; float: right;"></i>
+            </button>
+            <div class="dropdown-container">
+                <div class="txt">
+                    <p id="link-to-copy"><a href="https://chat.openai.com/chat" style="font-size: 13px;"
+                            target="_blank">file:///C:/Usfyugfgsyugfsgfgsdugfdyusfdhfdhdhfchdrfdhjavxjvgsugdguzlivdshiuvdhlihvihvjhvhdasdddsfegesrhytryu6trdujiy</a>
+                    </p>
+                </div>
+                <div class="bnt"></div> <button id="linkbtn" onclick="copyLink()"><i class="fa fa-clone"></i></button>
+            </div>
+        </div> -->
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.3.js"></script> -->
+    <script src="OpportunityDetails.js"></script>
+    <script src="tablehide.js"></script>
+    <script src="OpportunityQuotesTable.js"></script>
+    <script src="../Required/sideBar.js"></script>
+    <script src="../Required/Navigation.js"></script>
+    <script src="OppurtunityDataSideBar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Design</title>
+    <link rel="stylesheet" href="../Required/Style.css">
+    <link rel="stylesheet" href="Catalog.css">
+    <link rel="stylesheet" href="CatalogQuestionAndRules.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="navandbread">
+        <nav>
+            <div class="search">
+                <div class="icon"></div>
+                <div class="input">
+                    <input type="text" placeholder="Search..." id="mysearch">
+                </div>
+                <span class="clear" onclick="document.getElementById('mysearch').value= ''"></span>
+            </div>
+            <!-- <div class="search-bar">
+        <input type="text" placeholder="search....">
+        <a href=""><li class="fas fa-search"></li></a>
+        </div>       -->
+            <div class="navset">
+                <span style="margin-right: 30px;"><a href="#"><button
+                            style="padding-top: 4px;font-family: 'Courier New';font-weight: bold;">DEFAULT</button></a></span>
+                <span class="icon"><a href="#"><i class="fas fa-clock"
+                            style="font-size:20px;color: azure;margin-right: 31px;"></i></a></span>
+                <span class="icon"><a href="#"><i class="fa fa-bell"
+                            style="font-size:20px;color: azure; margin-right: 31px;"></i></a></span>
+                <div class="dropdown">
+                    <li onclick="myFunction()" class="fa fa-user"
+                        style="font-size:20px;color: azure; margin-right: 20px;"></li>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="../Profile/MyProfile.html">My Profile</a>
+                        <a href="#">What's New?</a>
+                        <a href="#">Logout BMC Software</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs--item">
+                <a href="../Home/Home.html" class="breadcrumbs--link breadcrumbs">HOME</a>
+            </li>
+            <li class="breadcrumbs--item">
+                <a href="../Catalog/Catalog.html" class="breadcrumbs--link breadcrumbs--link--active">CATALOG</a>
+            </li>
+            <li style="float: right;list-style: none;">
+                <a href="#" class="breadcrumbs--link breadcrumbs--link--active"><i class="fa fa-pen"
+                        style="font-size: 15px;margin-right: 10px;"></i></a>
+                <a href="#" class="breadcrumbs--link breadcrumbs--link--active"><i class="fa fa-table"
+                        style="font-size: 15px;margin-right: 10px;"></i></a>
+            </li>
+        </ul>
+        <hr class="hr">
+    </div>
+    <div class="content-bar" style="position:fixed;">
+        <ul>
+            <a href="../Home/Home.html">
+                <li>
+                    <span class="icon"><i class="fas fa-home"></i></span>
+                    <span class="item">HOME</span>
+                </li>
+            </a>
+            <a href="Roles.html">
+                <li>
+                    <span class="icon"><i class="fa-solid fa-stamp"></i></span>
+                    <span class="item">ROLES</span>
+                </li>
+            </a>
+            <a href="#">
+                <li>
+                    <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>
+                    <span class="item">ITEMS</span>
+                </li>
+            </a>
+            <a href="../content/Content.html">
+                <li>
+                    <span class="icon"><i class="fa fa-eye"></i></span>
+                    <span class="item">CONTENT</span>
+                </li>
+            </a>
+            <a href="#">
+                <li>
+                    <span class="icon"><i class="fa-solid fa-clipboard-list"></i></span>
+                    <span class="item">ASSET</span>
+                </li>
+            </a>
+            <a href="#">
+                <li>
+                    <span class="icon"><i class="fa-sharp fa-regular fa-clone"></i></span>
+                    <span class="item">TEMPLATES</span>
+                </li>
+            </a>
+            <a href="#">
+                <li class="active1">
+                    <span class="icon"><i class="fa-solid fa-pen-to-square"></i></span>
+                    <span class="item">SURVEYS</span>
+                </li>
+            </a>
+            <a href="#">
+                <li class="active1">
+                    <span class="icon"></span>
+                    <span class="item">SETUP</span>
+                </li>
+            </a>
+            <a href="#">
+                <li class="">
+                    <span class="icon"></span>
+                    <span class="item">WHERE USED</span>
+                </li>
+            </a>
+
+            <a href="#">
+                <li>
+                    <span class="icon"><i class="fa-solid fa-book"></i></span>
+                    <span class="item">DOCTYPES</span>
+                </li>
+            </a>
+        </ul>
+    </div>
+    <div>
+        <div class="helpbox">
+            <button><a href="#divOne" class="button1"><img src="../Required/HelpIcon.png" alt="Icon"
+                        style="height:35px;width:35px;"></a></button>
+        </div>
+        <div class="overlay" id="divOne">
+            <div class="wrapper">
+                <p class="head">LOG A SUPPORT REQUEST</p><br>
+                <a href="#" class="close">&times;</a>
+                <div class="content">
+                    <div class="container1">
+                        <form>
+
+                            <label>Summary:</label>
+                            <input type="text" class="help">
+                            <label>Description:</label>
+                            <textarea rows="8" cols=""></textarea>
+                            <label>Priority(0ptional):</label><br>
+                            <select name="format" id="format">
+                                <option selected disabled>Select..</option>
+                                <option value="critical">Critical</option>
+                                <option value="high">High</option>
+                                <option value="medium">Medium</option>
+                                <option value="low">Low</option>
+                                <option value="lowest">Lowest</option>
+                            </select><br><br>
+                            <label>Attachment(optional):</label><br>
+                            <input type="file"><br><br>
+                            <label>Your contact e-mail:</label><br>
+                            <input type="email" class="em"><br><br>
+                            <input type="submit" value="Send">
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="rowsurvey">
+            <div class="leftsurvey" style="position: fixed;">
+
+                <div class="inboxsurvey">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="text" id="mySearchsurvey" onkeyup="myFunctionSurvey1()" title="type in a chategory">
+                </div>
+                <div class="dividesurvey">
+                    <ul id="myMenusurvey">
+                        <span id="dotssurvey">
+                            <li><a href="#">Abbott Laboratories</a></li>
+                            <li><a href="#">ABC Company</a></li>
+                            <li><a href="#">ABSA Bank Limited</a></li>
+                            <li><a href="#">ACA Pacific Technology</a></li>
+                            <li><a href="#">Accenture</a></li>
+                            <li><a href="#">Accenture S.p.A</a></li>
+                            <li><a href="#">1040Tech LLC</a></li>
+                            <li><a href="#">ABB AG</a></li>
+                            <li><a href="#">Abbey National Group</a></li>
+                            <li><a href="#">Abbott</a></li>
+                        </span>
+                        <span id="moresurvey">
+                            <li><a href="#">Accenture S.p.A</a></li>
+                            <li><a href="#">1040Tech LLC</a></li>
+                            <li><a href="#">ABB AG</a></li>
+                            <li><a href="#">Abbey National Group</a></li>
+                            <li><a href="#">Abbott</a></li>
+                            <li><a href="#">Abbott Laboratories</a></li>
+                            <li><a href="#">ABC Company</a></li>
+                            <li><a href="#">ABSA Bank Limited</a></li>
+                            <li><a href="#">ACA Pacific Technology</a></li>
+                            <li><a href="#">Accenture</a></li>
+                            <li><a href="#">Accenture S.p.A</a></li>
+                        </span>
+                        <button onclick="myFunctionSurvey()" id="myBTNsurvey">VIEW MORE</button>
+                    </ul>
+                </div>
+                <div class="plusiconsurvey">
+                    <a href="#"><i class="fa fa-plus"></i></a>
+                </div>
+            </div>
+            <div class="rightsurvey">
+                <div id="main">
+                    <div class="submain">
+                        <button class="openbtnSurvey" onclick="openClose()">
+                            <i class="fa-light fa-less-than" style="color: white;"></i></button>
+                    </div>
+                    <div class="surveyhead">
+                        <div id="headersurvey">SURVEY TEMPLATE
+                            <div class="surveyapprove">
+                                <a class="approvesurvey1" href="#" onclick="openPopup()">OVERWRITE</a>
+                                <a class="approvesurvey2" href="#">CREATE A COPY</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="containersurvey">
+                            <div id="contentS1">
+                                <div class="surveyName" id="surveynamesection">
+                                    <input class="" id="sn" type="text">
+                                    <label id="tittleLabel">TITLE</label>
+                                    <label id="cpqLabel">CPQ</label>
+                                </div>
+                                <div id="headsurvey2" style="display: none;">
+                                    <a class="export" href="#">EXPORT</a>
+                                    <label for="myfile" id="file">IMPORT FROM LOCAL FILE</label>
+                                    <input type="file" id="myfile" name="myfile" display="show" hidden>
+                                    <a class="savee" href="#">SAVE</a>
+                                    <a class="resumecalc" href="#">RESUME CALCULATIONS</a>
+                                </div>
+                                <div class="catIcon">
+                                    <i class="fa-solid fa-clipboard-list" id="catIcon" onclick="defaultShow()"
+                                        style="margin-left: 25px; width: 20px;"></i><br>
+                                    <label for="" id="clipLabel">DEFAULTS</label>
+                                </div>
+                                <div class="calcIcon" id="calcId">
+                                    <i class="fa fa-table" id="calcIcon" onclick="calcShow()"
+                                        style="margin-left: 25px; width: 20px;"></i><br>
+                                    <label for="" id="calcLabel">CALC</label>
+                                    <i class="fa fa-cog" id="configIcon" style="margin-left: 25px; display: none;"
+                                        onclick="defaultShow()"></i><br>
+                                    <label for="" id="configLabel" style="display: none;">CONFIG</label>
+                                </div>
+                                <!--  -->
+                                <div class="bckbtn" id="bckbtn1" onclick="calcShow()" style="display: none;">
+                                    <button id="backk">BACK</button>
+                                    <i class="fa fa-chevron-left" id="backicon" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div id="containerSA">
+                                <div id="contentS2">
+                                    <select>
+                                        <option selected disabled hidden></option>
+                                        <option value="">DBA</option>
+                                        <option value="">DSOM</option>
+                                        <option value="">DEFAULT</option>
+                                        <option value="">EDUCATION</option>
+                                        <option value="">IZOT</option>
+                                    </select>
+                                    <label>CATLALOG CATEGORY</label>
+                                </div>
+                                <div id="contentS3">
+                                    <select id="mySelect" onchange="showDeleteBtn()">
+                                        <option selected disabled hidden></option>
+                                        <option value="inactive">INACTIVE</option>
+                                        <option value="inprogress">IN PROCESS</option>
+                                        <option value="published">PUBLISHED</option>
+                                    </select>
+                                    <label>CATLOG STATUS</label>
+                                </div>
+                                <div id="contentS4">
+                                    <input type="checkbox" style="width:20px;margin-left: 28px;">
+                                    <label>GLOBALS</label>
+                                </div>
+                                <div id="contentS5">
+                                    <input type="checkbox" style="width:20px;margin-left: 28px;">
+                                    <label>WIDE</label>
+                                </div>
+                            </div>
+                            <div id="containerSB">
+                                <div id="contentS6">
+                                    <select id="tempUpdate" onchange="displayAlert()">
+                                        <option selected disabled hidden></option>
+                                        <option value="auto">AUTOMATIC UPDATE</option>
+                                        <option value="noupdate">NO UPDATE</option>
+                                        <option value="promptuser">PROMPT USER</option>
+                                    </select>
+                                    <label>TEMPLATE UPDATE TYPE</label>
+                                </div>
+                                <div id="contentS7">
+                                    <input type="text" name="msg" id="userMesg" placeholder="Enter Your Message">
+                                    <label>UPDATE NOTIFICATION</label>
+                                </div>
+
+                            </div>
+                            <p id="noSurveyQuestion">This survey has no questions. </p>
+                        </div>
+                    </div>
+                    <div id="main-section">
+                        <div id="sections-container"></div>
+                        <button id="add-section-btn">+ ADD SECTION</button>
+                    </div>
+                    <!-- SPREAD SHEET CODE STARTS FROM HERE -->
+
+                    <div id="calc-container" style="display: none;">
+                        <iframe id="myfile" width="100%" height="400vh" frameborder="4" scrolling="no"
+                            src="https://onedrive.live.com/embed?resid=6C685993F809A9F8%212757&authkey=%21AABR6KgqMF_ImYs&em=2&wdAllowInteractivity=False&AllowTyping=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=true&ejss=false"></iframe>
+                        <!-- <div id="myExcelDiv" style="width: 402px; height: 346px;"></div> -->
+                        <!-- * This code uses the Microsoft Office Excel Javascript object model to programmatically insert the
+                                                     * Excel Web App into a div with id=myExcelDiv. The full API is documented at
+                                                     * https://msdn.microsoft.com/en-US/library/hh315812.aspx. There you can find out how to programmatically get
+                                                     * values from your Excel file and how to use the rest of the object model. -->
+                        <script type="text/javascript"
+                            src="https://onedrive.live.com/embed?resid=6C685993F809A9F8%212757&authkey=%21AABR6KgqMF_ImYs&em=3&wdDivId=%22myExcelDiv%22&wdDownloadButton=1&wdAllowInteractivity=0&wdAllowTyping=1"
+                            multiple onchange="updateList()"></script>
+                        <!-- <div id="myExcelDiv1" style="width: 100%; height: 400px"></div> -->
+                        <!-- <script type="text/javascript" src="https://onedrive.live.com/embed?resid=6C685993F809A9F8%212757&authkey=%21AABR6KgqMF_ImYs&em=3&wdDivId=%22myExcelDiv1%22&wdDownloadButton=1&wdAllowInteractivity=1&wdAllowTyping=1" async></script> -->
+
+                    </div>
+
+                    <div id="deletesurveysection">
+                        <button id="deletesurvey" style="color:red;">DELETE SURVEY</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- POPUP SCREEN FOR OVERWRITE -->
+    <div id="overwriteContainer">
+        <i class="fas fa-xmark" id="hidesec" style="float:right; margin-right: -5px; margin-top:-17px; color: #2698ca;"
+            onclick="closePopup()"></i>
+        <p style="color: #2698ca; margin-left: -20px;">SURVEY SEARCH</p><br>
+        <div>
+            <i class="fa fa-search" style="position: relative; left:-33px; color: #2698ca; top: -18px; z-index: 1; "
+                aria-hidden="true"></i>
+            <input type="text" id="mySearchpopupsurvey" onkeyup="myFunctionpopupSurvey1()" title="type in a chategory" />
+        </div>
+        <p id="info">A survey overwrite will replace your current survey's rules, options, and calcsheet with the
+            selected survey</p>
+        <div id="surveyNameAndStatus">
+            <p style="color: #2698ca; margin-top: 10px;">Survey Name</p>
+            <p style="color: #2698ca;margin-top: 10px;">Survey Status</p>
+        </div>
+        <div id="surveyns">
+            <div id="surveyName">
+                <span id="dotspopupsurvey">
+                    <li><a href="#">Abbott Laboratories</a></li>
+                    <li><a href="#">ABC Company</a></li>
+                    <li><a href="#">ABSA Bank Limited</a></li>
+                    <li><a href="#">ACA Pacific Technology</a></li>
+                    <li><a href="#">Accenture</a></li>
+                    <li><a href="#">Accenture S.p.A</a></li>
+                    <li><a href="#">1040Tech LLC</a></li>
+                    <li><a href="#">ABB AG</a></li>
+                    <li><a href="#">Abbey National Group</a></li>
+                    <li><a href="#">Abbott</a></li>
+                </span>
+                <span id="morepopupsurvey">
+                    <li><a href="#">Accenture S.p.A</a></li>
+                    <li><a href="#">1040Tech LLC</a></li>
+                    <li><a href="#">ABB AG</a></li>
+                    <li><a href="#">Abbey National Group</a></li>
+                    <li><a href="#">Abbott</a></li>
+                    <li><a href="#">Abbott Laboratories</a></li>
+                    <li><a href="#">ABC Company</a></li>
+                    <li><a href="#">ABSA Bank Limited</a></li>
+                    <li><a href="#">ACA Pacific Technology</a></li>
+                    <li><a href="#">Accenture</a></li>
+                    <li><a href="#">Accenture S.p.A</a></li>
+                </span>
+                <button onclick="myFunctionpopupSurvey()" id="myBTNpopupsurvey">VIEW MORE</button>
+            </div>
+        </div>
+        <button id="overwrite" disabled>OVERWRITE</button>
+    </div>
+    </div>
+
+    <div id="backdrop"></div>
+    <div id="mySidebar" class="sidebar" style="padding-top: 0px;">
+        <div class="navside">
+            <button class="dropdown-btn" id="sidetoggle">FILES<i class="fa fa-angle-down" style="color: black; font-size: 20px; float: right;"></i> </button>
+            <div class="dropdown-container">
+                <ul id="file-list"></ul>
+                <div class="file-upload">
+                    <input id="file-input" type="file" onchange="displayFileName()" multiple hidden />
+                    <label for="file-input" id="filePlus"><i class="fa fa-plus"></i></label>
+                </div>
+            </div>
+            <div class="navside"> <button class="dropdown-btn" id="sidetoggle1">NOTES <i class="fa fa-angle-down"
+                        style="color: black; font-size: 20px; float: right;"></i> </button>
+                <div class="dropdown-container">
+                    <form action=""><input type="text" name="new" id="send" placeholder="Type your Note" /><button
+                            id="sent1"><i class='fa fa-send-o blue-color' style="color: #045679;"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="navside">
+                <button class="dropdown-btn" id="sidetoggle3">TIMESTAMP <i class="fa fa-angle-down"
+                        style="color: black; font-size: 20px; float: right;"></i> </button>
+                <div class="side-container">
+                    <hr id="lhr">
+                    <span id="time">CREATED BY:</span><span id="time1">${model}</span><br>
+                    <hr id="lhr">
+                    <span id="time">CREATED:</span><span id="time1">${model}</span><br>
+                    <hr id="lhr">
+                    <span id="time">LAST MODIFIED BY:</span><span id="time1">${model}</span><br>
+                    <hr id="lhr">
+                    <span id="time">LAST MODIFIED</span><span id="time1">${model}</span><br>
+                    <hr id="lhr">
+                    <span id="time">REVISION</span><span id="time1">${model}</span><br>
+                </div>
+            </div>
+            <div class="navside">
+                <button class="dropdown-btn" id="sidetoggle4">INTERNAL ID <i class="fa fa-angle-down"
+                        style="color: 1px solid black; font-size: 20px; float: right;"></i>
+                </button>
+                <div class="dropdown-container">
+                    <div class="txt">
+                        <p id="text-to-copy">
+                            <a href="https://chat.openai.com/chat" id="myId" style="font-size: 13px;"
+                                target="_blank">Internal Id</a>
+                        </p>
+                    </div>
+                    <div class="bnt">
+                        <button id="cpbtn" onclick="copyText()"><i class="fa fa-clone"
+                                style="font-size:15px; z-index: 2;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="navside">
+                <button class="dropdown-btn" id="sidetoggle5">LINK
+                    <i class="fa fa-angle-down" style="color: black; font-size: 20px; float: right;"></i>
+                </button>
+                <div class="dropdown-container">
+                    <div class="txt">
+                        <p id="link-to-copy"><a href="https://www.youtube.com/" id="myLink" style="font-size: 13px;"
+                                target="_blank">Link</a>
+                        </p>
+                    </div>
+                    <div class="bnt">
+                        <button id="linkbtn" onclick="copyLink()"><i class="fa fa-clone"
+                                style="font-size:15px; z-index: 2;"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <script src="https://code.jquery.com/jquery-3.6.3.js"></script> -->
+        <!-- <script type="text/javascript">
+        $(document).on('click', ' ul a li', function () {
+            $(this).addClass('active1').siblings().removeClass('active1')
+        })
+    </script> -->
+        <script src="SurveyShowMore.js"></script>
+        <script src="Surveyflex.js"></script>
+        <script src="../Required/sideBar.js"></script>
+        <script src="../Required/Navigation.js"></script>
+        <script src="CatalogQuestionAndRules.js"></script>
+        <script src="surveypopupshowmore.js"></script>
+</body>
+
+</html>

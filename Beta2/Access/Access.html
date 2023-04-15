@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Design</title>
+    <link rel="stylesheet" href="../Required/Style.css">
+    <link rel="stylesheet" href="Access.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="navandbread">
+        <nav>
+            <div class="search">
+                <div class="icon"></div>
+                <div class="input">
+                    <input type="text" placeholder="Search..." id="mysearch">
+                </div>
+                <span class="clear" onclick="document.getElementById('mysearch').value=''"></span>
+            </div>
+            <!-- <div class="search-bar">
+        <input type="text" placeholder="search....">
+        <a href=""><li class="fas fa-search"></li></a>
+        </div>-->
+            <div class="navset">
+                <span style="margin-right: 30px;"><a href="#"><button
+                            style="padding-top: 4px;font-family: 'Courier New';font-weight: bold;">DEFAULT</button></a></span>
+                <span class="icon"><a href="#"><i class="fas fa-clock"
+                            style="font-size:20px;color: azure;margin-right: 31px;"></i></a></span>
+                <span class="icon"><a href="#"><i class="fa fa-bell"
+                            style="font-size:20px;color: azure; margin-right: 31px;"></i></a></span>
+                <div class="dropdown">
+                    <li onclick="myFunction()" class="fa fa-user"
+                        style="font-size:20px;color: azure; margin-right: 20px;"></li>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="../Profile/MyProfile.html">My Profile</a>
+                        <a href="#">What's New?</a>
+                        <a href="#">Logout BMC Software</a>
+                    </div>
+                </div>
+        </nav>
+        <div class="bread">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs--item">
+                    <a href="../Home/Home.html" class="breadcrumbs--link breadcrumbs">HOME</a>
+                </li>
+                <li class="breadcrumbs--item">
+                    <a href="#" class="breadcrumbs--link breadcrumbs">ADMIN</a>
+                </li>
+                <li class="breadcrumbs--item">
+                    <a href="../Access/Access.html" class="breadcrumbs--link breadcrumbs--link--active">ACCESS</a>
+                </li>
+               
+            </ul>
+            <hr class="hr" style="height:1.5px;">
+        </div>
+    </div>
+    <div class="content-bar" style="top:64px;">
+        <ul>
+            <a href="../Home/Home.html">
+                <li>
+                    <span class="icon"><i class="fas fa-home"></i></span>
+                    <span class="item">HOME</span>
+                </li>
+            </a>
+            <a href="Company.html">
+                <li>
+                    <span class="icon"><i class="fa-solid fa-globe"></i></span>
+                    <span class="item">COMPANY</span>
+                </li>
+            </a>
+            <a href="../People/People.html">
+                <li>
+                    <span class="icon"><i class="fa-solid fa-user-group"></i></span>
+                    <span class="item">PEOPLE</span>
+                </li>
+            </a>
+            <a href="Access.html">
+                <li class="active1">
+                    <span class="icon"><i class="fa-solid fa-stamp"></i></span>
+                    <span class="item">ACCESS</span>
+                </li>
+            </a>
+            <a href="Config.html">
+                <li>
+                    <span class="icon"><i class="fa fa-cog"></i></span>
+                    <span class="item">CONFIG</span>
+                </li>
+            </a>
+            <a href="Lookups.html">
+                <li>
+                    <span class="icon"><i class="fa fa-eye"></i></span>
+                    <span class="item">LOOKUPS</span>
+                </li>
+            </a>
+            <a href="Security.html">
+                <li>
+                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                    <span class="item">SECURITY</span>
+                </li>
+            </a>
+            <a href="Alerts.html">
+                <li>
+                    <span class="icon"><i class="fa-solid fa-bullhorn"></i></span>
+                    <span class="item">ALERTS</span>
+                </li>
+            </a>
+            <a href="Imports.html">
+                <li>
+                    <span class="icon"><i class="fa-solid fa-arrow-down"></i></span>
+                    <span class="item">IMPORTS</span>
+                </li>
+            </a>
+            <a href="Hooks.html">
+                <li>
+                    <span class="icon"><i class="fa-solid fa-rotate"></i></span>
+                    <span class="item">HOOKS</span>
+                </li>
+            </a>
+        </ul>
+    </div>
+    <div>
+        <div class="helpbox" style="z-index: 2;">
+            <button><a href="#divOne" class="button1"><img src="../Required/HelpIcon.png" alt="Icon"
+                        style="height:35px;width:35px;"></a></button>
+        </div>
+        <div class="overlay" id="divOne">
+            <div class="wrapper">
+                <p class="head">LOG A SUPPORT REQUEST</p><br>
+                <a href="#" class="close">&times;</a>
+                <div class="content">
+                    <div class="container1">
+                        <form>
+
+                            <label>Summary:</label>
+                            <input type="text" class="help">
+                            <label>Description:</label>
+                            <textarea rows="8" cols=""></textarea>
+                            <label>Priority(0ptional):</label><br>
+                            <select name="format" id="format">
+                                <option selected disabled>Select..</option>
+                                <option value="critical">Critical</option>
+                                <option value="high">High</option>
+                                <option value="medium">Medium</option>
+                                <option value="low">Low</option>
+                                <option value="lowest">Lowest</option>
+                            </select><br><br>
+                            <label>Attachment(optional):</label><br>
+                            <input type="file"><br><br>
+                            <label>Your contact e-mail:</label><br>
+                            <input type="email" class="em"><br><br>
+                            <input type="submit" value="Send">
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------- -->
+
+    <div>
+        <div class="rowaccess">
+            <div class="leftaccess" style="position: fixed;">
+
+                <div class="inboxaccess">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="text" id="mySearchaccess" onkeyup="myFunction2Access()" title="type in a chategory">
+                </div>
+
+                <div class="divideaccess">
+                    <ul id="myMenuaccess">
+                        <span id="dotsaccess">
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </span>
+                        <span id="moreaccess">
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </span>
+                        <button onclick="myFunctionAccess()" id="myBTNaccess">VIEW MORE</button>
+                    </ul>
+                </div>
+                <div class="plusiconaccess">
+                    <a href="#"><i class="fa fa-plus"></i></a>
+                </div>
+            </div>
+            <div class="rightaccess">
+                <div id="headeraccess"><a>ACCESS</a></div>
+                <div class="grid-access">
+                    <div id="left-grid-access">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                      
+                        <p>PENDING(EXPIRED)</p>
+                        <label>EXPIRATION</label>
+                    </div>
+                    <div id="right-grid-access">
+                        <div class="accessdataright">
+                            <div class="containerAccess1">
+                                <div id="contentAccess1">
+                                    <input class="" type="text">
+                                    <label>FIRST NAME</label>
+                                </div>
+                                <div id="contentAccess2">
+                                    <input class="" type="text">
+                                    <label>LAST NAME</label>
+                                </div>
+                            </div>
+                            <div class="containerAccess2">
+                                <div id="contentAccess3">
+                                    <input class="" type="text">
+                                    <label>TITLE</label>
+                                </div>
+                                <div id="contentAccess4">
+                                    <input class="" type="text">
+                                    <label>MANAGER</label>
+                                </div>
+                            </div>
+                            <div class="containerAccess3">
+                                <div id="contentAccess5">
+                                    <input class="" type="number">
+                                    <label>PHONE</label>
+                                </div>
+                                <div id="contentAccess6">
+                                    <input class="" type="email">
+                                    <label>EMAIL</label>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="accessdataright1">
+                    <div class="containerAccess4">
+                        <div id="contentAccess7">
+                            <div class="removeandresend">
+                                <button id="removeaccess" type="reset" style="color:red;">REMOVE ACCESS</button>
+                                <button id="resendemail" type="submit" style="color:rgb(0, 79, 128);">RESEND EMAIL</button>
+                            </div>
+                        </div>
+                        <div id="contentAccess8">
+                            <input class="" type="number">
+                            <label>UID</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="containerAccess5">
+                <div class="role1">
+                    <b>ROLE</b>
+                </div>
+               
+                <div class="roles1">   
+                   <i>Roles are defined in the Admin Security section on the left</i>
+               </div>
+               </div>
+               <div class="containerAccess6">
+                     <div id="contentAccess9" style="display: inline;">  
+                            <input class="" type="checkbox">
+                            <label>INTEGRATION ACCESS ONLY</label>
+                            <input class="" type="checkbox">
+                            <label>INTEGRATION ACCESS ONLY</label>
+                     </div>
+                     <div id="contentAccess10">
+                        <button id="deleteandtoken" type="reset" style="color:red;">DELETE REFRESH TOKEN</button>
+                     </div>
+               </div>
+               <div class="containerAccess7">
+                 <div id="contentAccess11">
+                    <select>
+                        <option disabled selected></option>
+                        <option>BMC SALES USER</option>
+                        <option>RESTRECTED USER</option>
+                        <option>ADMIN</option>
+                        <option>NO USER ACCESS</option>
+                        <option>BMC SOLUTION ARCHITECT</option>
+                        <option>BMC PMO USER</option>
+                        <option>APPROVER</option>
+                    </select>
+                    <label>SECURITY ROLE</label>
+                 </div>
+                 <div id="contentAccess12">
+                    <input class="" type="text"  onfocus="(this.type='date')" >
+                    <label>PASSWORD EXPIRATION DATE</label>
+                 </div>
+               </div>
+               <div class="refernce1">
+                <b>REFERENCE</b>
+            </div>
+            <div class="containerAccess8">
+                <div id="contentAccess13"> <select>
+                    <option selected disabled></option>
+                    <option>AFRICA</option>
+                    <option>ALL OTHER AP</option>
+                    <option>AP-ALL OTHER</option>
+                    <option>AP-AUS/JP</option>
+                    <option>AP-CHINA</option>
+                    <option>AP-INDIA</option>
+                    <option>ARGENTINA</option>
+                    <option>AUSTRALIA</option>
+                    </select>
+                    <label>ORG</label>
+                </div>
+                <div id="contentAccess14">
+                    <select>
+                        <option selected disabled></option>
+                        <option value="">AFRICA/ABIDJAN(FEBRUARY 16TH,6:40AM)</option>
+                        <option value="">AFRICA/ACCRA(FEBRUARY 16TH,6:40AM)</option>
+                        <option value="">AFRICA/ADDIS_ABABA(FEBRUARY 16TH,9:40AM)</option>
+                        <option value="">AFRICA/ALGIERS(FEBRUARY 16TH,7:40AM)</option>
+                        <option value="">AFRICA/ASMARA(FEBRUARY 16TH,9:40AM)</option>
+                        <option value="">AFRICA/ASMERA(FEBRUARY 16TH,9:40AM)</option>
+                        <option value="">AFRICA/BAMAKO(FEBRUARY 16TH,6:40AM)</option>
+                        <option value="">AFRICA/BANGUI(FEBRUARY 16TH,7:40AM)</option>
+                    </select>
+                    <label>TIME ZONE</label>
+                </div>
+            </div>
+            <div class="containerAccess9">
+                <div id="contentAccess15">    
+                <select id="lang">
+                    <option selected disabled></option>
+                    <option value="Afrikaans">Afrikaans</option>
+                    <option value="Albanian">Albanian</option>
+                    <option value="Arabic">Arabic</option>
+                    <option value="Armenian">Armenian</option>
+                    <option value="Basque">Basque</option>
+                    <option value="Bengali">Bengali</option>
+                    <option value="Bulgarian">Bulgarian</option>
+                    <option value="Catalan">Catalan</option>
+                    <option value="Cambodian">Cambodian</option>
+                    <option value="Chinese (Mandarin)">Chinese (Mandarin)</option>
+                    <option value="Croatian">Croatian</option>
+                    <option value="Czech">Czech</option>
+                    <option value="Danish">Danish</option>
+                    <option value="Dutch">Dutch</option>
+                    <option value="English">English</option>
+                    <option value="Estonian">Estonian</option>
+                    <option value="Fiji">Fiji</option>
+                    <option value="Finnish">Finnish</option>
+                    <option value="French">French</option>
+                    <option value="Georgian">Georgian</option>
+                    <option value="German">German</option>
+                    <option value="Greek">Greek</option>
+                    <option value="Gujarati">Gujarati</option>
+                    <option value="Hebrew">Hebrew</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Hungarian">Hungarian</option>
+                    <option value="Icelandic">Icelandic</option>
+                    <option value="Indonesian">Indonesian</option>
+                    <option value="Irish">Irish</option>
+                    <option value="Italian">Italian</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="Javanese">Javanese</option>
+                    <option value="kannada">kannada</option>
+                    <option value="Korean">Korean</option>
+                    <option value="Latin">Latin</option>
+                    <option value="Latvian">Latvian</option>
+                    <option value="Lithuanian">Lithuanian</option>
+                    <option value="Macedonian">Macedonian</option>
+                    <option value="Malay">Malay</option>
+                    <option value="Malayalam">Malayalam</option>
+                    <option value="Maltese">Maltese</option>
+                    <option value="Maori">Maori</option>
+                    <option value="Marathi">Marathi</option>
+                    <option value="Mongolian">Mongolian</option>
+                    <option value="Nepali">Nepali</option>
+                    <option value="Norwegian">Norwegian</option>
+                    <option value="Persian">Persian</option>
+                    <option value="Polish">Polish</option>
+                    <option value="Portuguese">Portuguese</option>
+                    <option value="Punjabi">Punjabi</option>
+                    <option value="Quechua">Quechua</option>
+                    <option value="Romanian">Romanian</option>
+                    <option value="Russian">Russian</option>
+                    <option value="Samoan">Samoan</option>
+                    <option value="Serbian">Serbian</option>
+                    <option value="Slovak">Slovak</option>
+                    <option value="Slovenian">Slovenian</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="Swahili">Swahili</option>
+                    <option value="Swedish ">Swedish </option>
+                    <option value="Tamil">Tamil</option>
+                    <option value="Tatar">Tatar</option>
+                    <option value="Telugu">Telugu</option>
+                    <option value="Thai">Thai</option>
+                    <option value="Tibetan">Tibetan</option>
+                    <option value="Tonga">Tonga</option>
+                    <option value="Turkish">Turkish</option>
+                    <option value="Ukrainian">Ukrainian</option>
+                    <option value="Urdu">Urdu</option>
+                    <option value="Uzbek">Uzbek</option>
+                    <option value="Vietnamese">Vietnamese</option>
+                    <option value="Welsh">Welsh</option>
+                    <option value="Xhosa">Xhosa</option>
+                 </select>
+              <label>LANGUAGE</label>
+          </div>
+          <div id="contentAccess16">
+                <select>
+                    <option selected disabled></option>
+                    <option value="">NONE</option>
+                    <option value="">BY EMAIL</option>
+                </select>
+                <label>NOTIFICATIONS</label>
+          </div>
+        </div>
+        <div class="loginemailpswd">
+            <b>LOGIN EMAIL & PASSWORD</b>
+        <i>Cannot update password untill the Account is activated</i>
+        </div>
+        <div class="loginEml">
+            <b>LOGIN EMAIL:</b>
+        </div>
+        </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="../Required/Navigation.js"></script>
+    <script src="AccessFlex.js"></script>
+    <script src="AccessShowMore.js"></script>
+    </body>

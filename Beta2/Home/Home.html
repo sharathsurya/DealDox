@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Required/Style.css">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navandbread">
+        <nav>
+            <div class="search">
+                <div class="icon"></div>
+                <div class="input">
+                    <input type="text" placeholder="Search..." id="mysearch">
+                </div>
+                <span class="clear" onclick="document.getElementById('mysearch').value= ''"></span>
+            </div>
+            <!-- <div class="search-bar">
+             <input type="text" placeholder="search....">
+             <a href=""><li class="fas fa-search"></li></a>
+             </div>-->
+
+            <div class="navset">
+                <span style="margin-right: 30px;"><a href="#"><button
+                            style="padding-top: 4px;font-family: 'Courier New';font-weight: bold;">DEFAULT</button></a></span>
+                <span class="icon"><a href="#"><i class="fas fa-clock"
+                            style="font-size:20px;color: azure;margin-right: 31px;"></i></a></span>
+                <span class="icon"><a href="#"><i class="fa fa-bell"
+                            style="font-size:20px;color: azure; margin-right: 31px;"></i></a></span>
+                <div class="dropdown">
+                    <li onclick="myFunction()" class="fa fa-user"
+                        style="font-size:20px;color: azure; margin-right: 20px;"></li>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="../Profile/MyProfile.html">My Profile</a>
+                        <a href="#">What's New?</a>
+                        <a href="#">Logout BMC Software</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="bread">
+            <ul class="breadcrumbs">
+                <!-- <li class="breadcrumbs--item">
+                    <a href="#" class="breadcrumbs--link breadcrumbs"
+                        style="display:inline;text-decoration:none">HOME</a>
+                </li> -->
+                <li class="breadcrumbs--item">
+                    <a href="../Home/Home.html" class="breadcrumbs--link breadcrumbs--link--active">HOME</a>
+                    <!-- </li> <li class="breadcrumbs--item">
+                 <a href="#" class="breadcrumbs--link">QUOTES</a>
+             </li> -->
+            </ul>
+            <hr class="hr">
+        </div>
+    </div>
+
+
+    <div class="content-bar">
+        <ul>
+            <a href="../Home/Home.html">
+                <li class="active1">
+                    <span class="icon"><i class="fas fa-home"></i></span>
+                    <span class="item">HOME</span>
+                </li>
+            </a>
+            <a href="../Accounts/Accounts.html">
+                <li>
+                    <span class="icon"><i class="fa-solid fa-book-open"></i></span>
+                    <span class="item">ACCOUNTS</span>
+                </li>
+            </a>
+            <a href="Quotes.html">
+                <li>
+                    <span class="icon"><i class="fa fa-dollar"></i></span>
+                    <span class="item">QUOTES</span>
+                </li>
+            </a>
+            <a href="Demand.html">
+                <li>
+                    <span class="icon"><i class="fa fa-user"></i></span>
+                    <span class="item">DEMAND</span>
+                </li>
+            </a>
+            <a href="Forecast.html">
+                <li>
+                    <span class="icon"><i class="fa fa-line-chart"></i></span>
+                    <span class="item">FORECAST</span>
+                </li>
+            </a>
+            <a href="../Catalog/Catalog.html">
+                <li>
+                    <span class="icon"><i class="fa fa-eye"></i></span>
+                    <span class="item">CATALOG</span>
+                </li>
+            </a>
+            <a href="../People/People.html">
+                <li>
+                    <span class="icon"><i class="fa fa-cog"></i></span>
+                    <span class="item">ADMIN</span>
+                </li>
+            </a>
+        </ul>
+    </div>
+    <div>
+        <div class="helpbox">
+            <button class="help"><a href="#divOne" class="button1"><img src="../Required/HelpIcon.png" alt="Icon"
+                        style="height:35px;width:35px;"></a></button>
+        </div>
+        <div class="overlay" id="divOne">
+            <div class="wrapper">
+                <p class="head">LOG A SUPPORT REQUEST</p><br>
+                <a href="#" class="close">&times;</a>
+                <div class="content">
+                    <div class="container1">
+                        <form>
+
+                            <label>Summary:</label>
+                            <input type="text" class="help-input">
+                            <label>Description:</label>
+                            <textarea rows="8" cols=""></textarea>
+                            <label>Priority(Optional):</label>
+                            <select name="priority" id="format">
+                                <option>Select...</option>
+                                <option>Critical</option>
+                                <option>High</option>
+                                <option>Medium</option>
+                                <option>Low</option>
+                                <option>Lowest</option>
+                            </select><br><br>
+                            <label>Attachment(Optional):</label><br>
+                            <input type="file"><br><br>
+                            <label>Your contact e-mail:</label><br>
+                            <input type="text" class="em"><br><br>
+                            <input type="submit" value="Send">
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------- -->
+    <div class="containerhome">
+        <div class="main-contenthome">
+            <div id="grid">
+                <div class="red">
+                    <div class="btn">
+                        <a href="#"><button class="bt active" style="margin-left: 30px;">MY RECENT
+                                QUOTES</button></a><a href="#"><button class="bt">ALL RECENT</button></a>
+                    </div>
+                    <div class="textData">
+                        <textarea name="recent" id="box-1" cols="30" rows="10" ></textarea>
+                    </div>
+
+                </div>
+                <div class="green">
+                    <div class="btn">
+                        <a href="#"><button class="btn2" style="width: 50px;margin-left: 140px;">ALERTS</button></a>
+                    </div>
+                    <div class="textData">
+                        <textarea name="recent" id="box-2" cols="30" rows="10" ></textarea>
+                    </div>
+                </div>
+                <div class="blue">
+                    <div class="btn">
+                        <a href="#"><button class="bts activ" style="margin-left: 20px;">REQUEST MY
+                                APPROVAL</button></a><a href="#"><button class="bts">MY SUBMISSIONS</button></a>
+                    </div>
+                    <div class="textData">
+                        <textarea name="recent" id="box-3" cols="30" rows="10" ></textarea>
+                    </div>
+                </div>
+                <div class="gray">
+                    <div class="btn">
+                        <a href="#"><button class="btn2">MY RECENT OPPORTUNITIES</button></a>
+                    </div>
+                    <div class="textData">
+                        <textarea name="recent" id="box-4" cols="30" rows="10" ></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <button class="sidebarhome-toggle">
+                < </button>
+        </div>
+        <div class="sidebarhome">
+            <h2>Sidebar Content</h2>
+
+        </div>
+    </div>
+    <script src="Home.js"></script>
+    <script src="../Required/Navigation.js"></script>
+</body>
+
+</html>

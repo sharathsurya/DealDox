@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Design</title>
+    <link rel="stylesheet" href="../Required/Style.css">
+    <link rel="stylesheet" href="GuidedSelling.css">
+    <link rel="stylesheet" href="GuidedSellingLeftSideBar.css">
+    <link rel="stylesheet" href="GuideSellingQuestion.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="navandbread">
+        <nav>
+            <div class="search">
+                <div class="icon"></div>
+                <div class="input">
+                    <input type="text" placeholder="Search..." id="mysearch">
+                </div>
+                <span class="clear" onclick="document.getElementById('mysearch').value=''"></span>
+            </div>
+            <!-- <div class="search-bar">
+        <input type="text" placeholder="search....">
+        <a href=""><li class="fas fa-search"></li></a>
+        </div>-->
+            <div id="DName">
+                <span id="uName">$model-UNAME</span><span id="source">Powered by </span><span id="sName">DealDocx</span>
+            </div>
+            <div class="navset">
+                <span style="margin-right: 30px;"><a href="#"><button
+                            style="padding-top: 4px;font-family: 'Courier New';font-weight: bold;">DEFAULT</button></a></span>
+                <span class="icon"><a href="#"><i class="fas fa-clock"
+                            style="font-size:20px;color: azure;margin-right: 31px;"></i></a></span>
+                <span class="icon"><a href="#"><i class="fa fa-bell"
+                            style="font-size:20px;color: azure; margin-right: 31px;"></i></a></span>
+                <div class="dropdown">
+                    <li onclick="myFunction()" class="fa fa-user"
+                        style="font-size:20px;color: azure; margin-right: 20px;"></li>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="../Profile/MyProfile.html">My Profile</a>
+                        <a href="#">What's New?</a>
+                        <a href="#">Logout BMC Software</a>
+                    </div>
+                </div>
+        </nav>
+        <div class="bread">
+            <ul class="breadcrumbs" style="padding: 9px;">
+                <li class="breadcrumbs--item">
+                    <a href="../Home/Home.html" class="breadcrumbs--link breadcrumbs"
+                        style="display:inline;text-decoration:none">HOME</a>
+
+                <li class="breadcrumbs--item">
+                    <a href="../Accounts/Accounts.html" class="breadcrumbs--link breadcrumbs--link--active">ACCOUNTS</a>
+
+                    <!-- </li> <li class="breadcrumbs--item">
+            <a href="#" class="breadcrumbs--link">QUOTES</a>
+        </li> -->
+                </li>
+                <div style="float: right;">
+                    <a href="#" style="padding:14px;padding-bottom:6px; background-color: #216c98;z-index:3;"><i
+                            class="fa fa-pen" style="font-size: 15px; border: none;color: white;"></i></a>
+                    <a href="../Sow/Sow.html"
+                        style="text-decoration: none;color: lightslategray;padding:14px;padding-bottom:6px;"><i
+                            class="fa fa-scroll" style="border:1px solid black;font-size: 17px;border: none;"></i></a>
+                    
+                            <a href="" style="text-decoration: none;color: black;padding:14px;padding-bottom:6px;"><i
+                            class="fa fa-table" style="border:1px solid black;font-size: 17px;border: none;"></i></a>
+
+                </div>
+            </ul>
+            <hr class="hr" style="height:1.5px;">
+        </div>
+    </div>
+    <div class="content-bar" id="content" style="top:74px;">
+        <ul>
+            <a href="../Home/Home.html">
+                <li>
+                    <span class="icon"><i class="fas fa-home"></i></span>
+                    <span class="item">HOME</span>
+                </li>
+            </a>
+            <a href="../Accounts/Accounts.html">
+                <li class="active1">
+                    <span class="icon"><i class="fa-solid fa-book-open"></i></span>
+                    <span class="item">ACCOUNTS</span>
+                </li>
+            </a>
+            <a href="Quotes.html">
+                <li>
+                    <span class="icon"><i class="fa fa-dollar"></i></span>
+                    <span class="item">QUOTES</span>
+                </li>
+            </a>
+            <a href="Demand.html">
+                <li>
+                    <span class="icon"><i class="fa fa-user"></i></span>
+                    <span class="item">DEMAND</span>
+                </li>
+            </a>
+            <a href="Forecast.html">
+                <li>
+                    <span class="icon"><i class="fa fa-line-chart"></i></span>
+                    <span class="item">FORECAST</span>
+                </li>
+            </a>
+            <a href="../Catalog/Catalog.html">
+                <li>
+                    <span class="icon"><i class="fa fa-eye"></i></span>
+                    <span class="item">CATALOG</span>
+                </li>
+            </a>
+            <a href="../People/People.html">
+                <li>
+                    <span class="icon"><i class="fa fa-cog"></i></span>
+                    <span class="item">ADMIN</span>
+                </li>
+            </a>
+        </ul>
+    </div>
+    <div>
+        <div class="helpbox" style="z-index: 2;">
+            <button><a href="#divOne" class="button1"><img src="../Required/HelpIcon.png" alt="Icon"
+                        style="height:35px;width:35px;"></a></button>
+        </div>
+        <div class="overlay" id="divOne">
+            <div class="wrapper">
+                <p class="head">LOG A SUPPORT REQUEST</p><br>
+                <a href="#" class="close">&times;</a>
+                <div class="content">
+                    <div class="container1">
+                        <form>
+
+                            <label>Summary:</label>
+                            <input type="text" class="help-input">
+                            <label>Description:</label>
+                            <textarea rows="8" cols=""></textarea>
+                            <label>Priority(0ptional):</label><br>
+                            <select name="priority" id="format">
+                                <option selected disabled>Select..</option>
+                                <option value="critical">Critical</option>
+                                <option value="high">High</option>
+                                <option value="medium">Medium</option>
+                                <option value="low">Low</option>
+                                <option value="lowest">Lowest</option>
+                                </select>
+                                <br><br>
+                                <label>Attachment(optional):</label><br>
+                                <input type="file"><br><br>
+                                <label>Your contact e-mail:</label><br>
+                                <input type="email" class="em"><br><br>
+                                <input type="submit" value="Send">
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid-container" id="gridID">
+        <div class="sidebarguide" id="leftsideguide">
+                <button class="btnguide" id="leftBtn" onclick="guideOpen()">></button>
+                <div class="guidedselling">
+                    <b>GUIDED SELLING</b>
+                </div>
+                <div class="guideSelling">
+                    <h3>Consulting<i class="fa fa-cog" id="settingicon" onclick="expandFullWidth()"
+                            style="float: right; font-size: 30px; color: lightgray;"></i></h3>
+                    <div class="pencil">
+                        <i class="fa fa-pencil" onclick="strinkwidth()" id="pencil" style="display: none;"></i>
+                        <label for="pencil" id="answer" style="font-size: 10px; display: none;">ANSWER &nbsp;
+                            CONFIG</label>
+                    </div>
+                </div>
+                <div class="guideLabel" id="gl">
+                    <label>CPQ</label>
+                    <label style="float: right; padding-right: 10px;" id="config">CONFIG</label>
+                </div>
+                <div id="hideOnExpand">
+                    <div class="navside">
+                        <button class="dropdown-btn" id="sidetoggle4">1. Customer Details<i class="fa fa-angle-down"
+                                style="color: 1px solid black; font-size: 20px; float: right;"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <div class="txt">
+                                <p id="text-to-copy" style="border-left: none;"></p>
+                                <p id="guidedFieldsHead">Account Details</p>
+                            </div>
+                            <div class="txt">
+                                <p id="text-to-copy">1.2</p>
+                                <p id="guidedFields">Billing Customer Name</p>
+                                <input id="billingCustomer" type="text" name="billing customer name" value="" readonly>
+                            </div>
+                            <div class="txt">
+                                <p id="text-to-copy">1.3</p>
+                                <p id="guidedFields">End Customer Name</p>
+                                <input id="billingCustomer" type="text" name="end customer name" value="" readonly>
+                            </div>
+                            <div class="txt">
+                                <p id="text-to-copy">1.4</p>
+                                <p id="guidedFields">Customer Address</p>
+                                <button id="floderOpen" hidden onclick="myfunctionBill('address')"></button>
+                                <label for="floderOpen" id="folderIcon"><i class="fa-regular fa-folder"></i></label>
+                            </div>
+                            <div id="address">
+                                <div class="address1">
+                                    <button class="addressBtn" onclick="myfunctionShipOne('shipTable')"><i
+                                            class="fa fa-angle-down"
+                                            style="float: left; padding-left: 10px; font-size: 20px;"></i> Shipping
+                                        Address</button>
+                                    <div id="shipTable">
+                                        <div id="shipAdd">
+                                            <input id="read" type="text" value="STREET" readonly>
+                                            <input id="edit" type="text" name="street" value="">
+                                            <!-- <button type="reset" id="erase" name="erase" value="rub"></button> -->
+
+                                            <input id="read" type="text" value="CITY" readonly>
+                                            <input id="edit" type="text" name="city" value="">
+                                            <!-- <button type="reset" id="erase" name="erase" value="rub"></button> -->
+
+                                            <input id="read" type="text" value="STATE" readonly>
+                                            <input id="edit" type="text" name="state" value="">
+                                            <!-- <button type="reset" id="erase" name="erase" value="rub"></button> -->
+
+                                            <input id="read" type="text" value="ZIP CODE" readonly>
+                                            <input id="edit" type="text" name="zip" value="">
+                                            <!-- <button type="reset" id="erase" name="erase" value="rub"></button> -->
+
+                                            <input id="read" type="text" value="COUNTRY" readonly>
+                                            <input id="edit" type="text" name="country" value="">
+                                            <!-- <button type="reset" id="erase" name="erase" value="rub"></button> -->
+
+                                            <input id="read" type="text" value="PHONE #" readonly>
+                                            <input id="edit" type="text" name="phonenumber" value="">
+                                            <!-- <button type="reset" id="erase" name="erase" value="rub"></button> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="address2">
+                                    <button class="addressBtn" onclick="myfunctionBillOne('billTable')"><i
+                                            class="fa fa-angle-down"
+                                            style="float: left; padding-left: 10px; font-size: 20px;"></i>Billing
+                                        Address</button>
+                                    <div id="billTable">
+                                        <div class="billAdd">
+                                            <input id="read" type="text" value="STREET" readonly>
+                                            <input id="edit" type="text" name="street" value="">
+                                            <!-- <input type="reset" id="erase" name="erase" value="rub"></button> -->
+
+                                            <input id="read" type="text" value="CITY" readonly>
+                                            <input id="edit" type="text" name="city" value="">
+                                            <!-- <button type="reset" id="erase" name="erase" value="rub"></button> -->
+
+                                            <input id="read" type="text" value="STATE" readonly>
+                                            <input id="edit" type="text" name="state" value="">
+                                            <!-- <button type="reset" id="erase" name="erase" value="rub"></button> -->
+
+                                            <input id="read" type="text" value="ZIP CODE" readonly>
+                                            <input id="edit" type="text" name="zip" value="">
+                                            <!-- <button type="reset" id="erase" name="erase" value="rub"></button> -->
+
+                                            <input id="read" type="text" value="COUNTRY" readonly>
+                                            <input id="edit" type="text" name="country" value="">
+                                            <!-- <button type="reset" id="erase" name="erase" value="rub"></button> -->
+
+                                            <input id="read" type="text" value="PHONE #" readonly>
+                                            <input id="edit" type="text" name="phonenumber" value="">
+                                            <!-- <button type="reset" id="erase" name="erase" value="rub"></button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <p id="text-to-copy" style="border-left: none;"></p>
+                                <p id="guidedFieldsHead">Opportunity Details</p>
+                            </div>
+                            <div class="txt">
+                                <p id="text-to-copy">1.6</p>
+                                <p id="guidedFields">Opportunity ID</p>
+                                <input id="billingCustomer" type="text" name="oppId" value="" readonly>
+                            </div>
+                            <div class="txt">
+                                <p id="text-to-copy">1.7</p>
+                                <p id="guidedFields">Opportunity Name</p>
+                                <input id="billingCustomer" type="text" name="oppName" value="" readonly>
+                            </div>
+                            <div class="txt">
+                                <p id="text-to-copy">1.8</p>
+                                <p id="guidedFields">Opportunity Owner Details</p>
+                                <button id="oppData" hidden onclick="openCSAM('opportunity')"></button>
+                                <label for="oppData" id="oppIcon"><i class="fa-regular fa-folder"></i></label>
+                            </div>
+                            <div id="opportunity">
+                                <button id="oppBtn" onclick="myOpportunity('csamData')"><i class="fa fa-angle-down"
+                                        style="float: left; padding-left: 10px; font-size: 20px;"></i>CSAM
+                                    Details</button>
+                                <div id="csamData">
+                                    <div class="csamForm">
+                                        <input id="read" type="text" value="NAME" readonly>
+                                        <input id="edit" type="text" name="csname" value="">
+                                        <!-- <button type="reset" id="erase" name="erase" value="rub"></button> -->
+
+
+                                        <input id="read" type="text" value="EMAIL ADDRESS" readonly>
+                                        <input id="edit" type="text" name="email" value="">
+                                        <!-- <button type="reset" id="erase" name="erase" value="rub"></button> -->
+
+                                        <input id="read" type="text" value="PHONE" readonly>
+                                        <input id="edit" type="text" name="phnumber" value="">
+                                        <!-- <button type="reset" id="erase" name="erase" value="rub"></button> -->
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <p id="text-to-copy">1.9</p>
+                                <p id="guidedFields">Stage</p>
+                                <input id="billingCustomer" type="text" value="" name="stage" readonly>
+                            </div>
+                            <div class="txt">
+                                <p id="text-to-copy">1.10</p>
+                                <p id="guidedFields">Region</p>
+                                <input id="billingCustomer" type="text" name="region" value="" readonly>
+                            </div>
+                            <div class="txt">
+                                <p id="text-to-copy">1.11</p>
+                                <p id="guidedFields">Currency</p>
+                                <input id="billingCustomer" type="text" name="currency" value="" readonly>
+                            </div>
+                            <div class="txt">
+                                <p id="text-to-copy">1.12</p>
+                                <p id="guidedFields">Project Start Date</p>
+                                <input id="billingCustomer" type="text" name="startDate" value="" readonly>
+                            </div>
+                            <div class="txt">
+                                <p id="text-to-copy">1.13</p>
+                                <p id="guidedFields">Engagement ID</p>
+                                <input id="billingCustomer" type="text" name="engagementId" value="" readonly>
+                            </div>
+                            <div class="txt">
+                                <p id="text-to-copy">1.14</p>
+                                <p id="guidedFields">Project Type</p>
+                                <input id="billingCustomer" type="text" name="projectType" value="" readonly>
+                            </div>
+                            <div class="txt">
+                                <p id="text-to-copy">1.15</p>
+                                <p id="guidedFields">Opportunity Type</p>
+                                <input id="billingCustomer" type="text" name="opportunityType" value="" readonly>
+                            </div>
+                            <div class="txt">
+                                <p id="text-to-copy">1.16</p>
+                                <p id="guidedFields">Customer VAT Number</p>
+                                <input id="billingCustomer" type="text" name="vatNumber" value="" readonly>
+                            </div>
+                            <div class="txt">
+                                <p id="text-to-copy">1.17</p>
+                                <p id="guidedFields">Product Line</p>
+                                <input id="billingCustomer" type="text" name="productLine" value="" readonly>
+                            </div>
+                            <div class="txt">
+                                <p id="text-to-copy">1.18</p>
+                                <p id="guidedFields">Product Interest</p>
+                                <input id="billingCustomer" type="text" name="productInterest" value="" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END OF CUSTOMER DETAILS -->
+                    <!-- START OF QUOTE DETAILS -->
+                    <div class="navside">
+                        <button class="dropdown-btn" id="sidetoggle4">2. Quote Type <i class="fa fa-angle-down"
+                                style="color: 1px solid black; font-size: 20px; float: right;"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <div class="txt">
+                                <p id="text-to-copy">2.1</p>
+                                <p id="guidedFields">Select Quote Type</p>
+                                <button id="quoteData" onclick="myQuote('quote')" hidden></button>
+                                <label for="quoteData" id="quoteIcon"><i class="fa-regular fa-folder"></i></label>
+                            </div>
+                            <div id="quote">
+                                <button id="quoteAngleBtn" onclick="myQuoteData('tScope')">
+                                    <i class="fa fa-angle-down"
+                                        style="float: left; padding-left: 10px; font-size: 20px;"></i></i></button>
+                                <div id="tScope">
+                                    <div class="type">
+                                        <p id="guidedFieldsQuote">Quote Type</p>
+                                        <select name="quoteType" id="quoteSelect" style="text-align: left;" required>
+                                            <!-- <option value="" selected></option> -->
+                                            <option value="sow">SOW</option>
+                                            </select>
+                                            <!-- <option value="cco">CCO</option>
+                                        <option value="ms">NON-DD MS DEAL APPROVAL</option>
+                                        <option value="ps">NON-DD PS DEAL APPROVAL</option> -->
+                                            <!-- <button type="reset">erase</button> -->
+                                    </div>
+                                    <div class="scope">
+                                        <p id="guidedFieldsQuote">DD Scoping Config</p>
+                                        <select name="scopeType" id="quoteSelect" style="text-align: left;">
+                                            <!-- <option value="" selected></option> -->
+                                            <!-- <option value="zimit scope">ZIMIT SCOPING</option> -->
+                                            <option value="expert services">EXPERT SERVICES</option>
+                                            <!-- <option value="multi quote">MULTI QUOTE</option> -->
+                                        </select>
+                                            <!-- <button type="reset">erase</button> -->
+                                            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END OF QUOTE TYPE HTML CODE -->
+                    <!-- START OF BID/PRICING DETAILS -->
+
+                    <div class="navside">
+                        <button class="dropdown-btn" id="sidetoggle4">3.Bid/Pricing Details<i class="fa fa-angle-down"
+                                style="color: 1px solid black; font-size: 20px; float: right;"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <div class="txt">
+                                <p id="text-to-copy" style="border-left: none;"></p>
+                                <p id="guidedFieldsHead">Contract Details</p>
+                            </div>
+                            <div class="txt">
+                                <p id="text-to-copy">3.2</p>
+                                <p id="guidedFields">Quote Creation Date</p>
+                                <input id="billingCustomer" name="qcreatedDate" type="text" value="" readonly>
+                            </div>
+                            <div class="txt">
+                                <p id="text-to-copy">3.3</p>
+                                <p id="guidedFields">Bid Expires On</p>
+                                <input id="billingCustomer" name="bidExpiryDate" type="text" value=""
+                                    style="background: white;">
+                            </div>
+                            <div class="txt">
+                                <p id="text-to-copy">3.4</p>
+                                <p id="guidedFields">Contract Type</p>
+                                <input id="billingCustomer" type="text" name="contractType" value="Time & Material"
+                                    readonly>
+                            </div>
+                            <div class="txt">
+                                <p id="text-to-copy" style="border-left: none;"></p>
+                                <p id="guidedFieldsHead">Pricing Details</p>
+                            </div>
+                            <div class="txt">
+                                <p id="text-to-copy">3.5</p>
+                                <p id="guidedFields">Price List (Country Of Delivery)</p>
+
+                                <select id="country-select">
+                                    <option selected disabled>SELECT COUNTRY</option>
+                                    <option value="AFN">Afghanistan</option>
+                                    <option value="ALL">Albania</option>
+                                    <option value="DZD">Algeria</option>
+                                    <option value="AOA">Angola</option>
+                                    <option value="ARS">Argentina</option>
+                                    <option value="AMD">Armenia</option>
+                                    <option value="AWG">Aruba</option>
+                                    <option value="AUD">Australia</option>
+                                    <option value="AUE">Austria</option>
+                                    <option value="AZN">Azerbaijan</option>
+                                    <option value="BSD">Bahamas</option>
+                                    <option value="BHD">Bahrain</option>
+                                    <option value="BDT">Bangladesh</option>
+                                    <option value="BBD">Barbados</option>
+                                    <option value="BYR">Belarus</option>
+                                    <option value="BEF">Belgium</option>
+                                    <option value="BZD">Belize</option>
+                                    <option value="BMD">Bermuda</option>
+                                    <option value="BTN">Bhutan</option>
+                                    <option value="BOB">Bolivia</option>
+                                    <option value="BAM">Bosnia-Herzegovina</option>
+                                    <option value="BWP">Botswana</option>
+                                    <option value="BRL">Brazil</option>
+                                    <option value="BND">Brunei</option>
+                                    <option value="BGN">Bulgaria</option>
+                                    <option value="BIF">Burundi</option>
+                                    <option value="KHR">Cambodia</option>
+                                    <option value="CMF">Cameroon</option>
+                                    <option value="CAD">Canada</option>
+                                    <option value="CVE">Cape Verde</option>
+                                    <option value="KYD">CaymanIslands</option>
+                                    <option value="CLP">Chile</option>
+                                    <option value="CNY">China</option>
+                                    <option value="COP">Colombia</option>
+                                    <option value="KMF">Comoria</option>
+                                    <option value="CDF">Congo</option>
+                                    <option value="CRC">Costa Rica</option>
+                                    <option value="HRK">Croatia</option>
+                                    <option value="CUC">Cuba</option>
+                                    <option value="CZK">Czech Republic</option>
+                                    <option value="DKK">Denmark</option>
+                                    <option value="DJF">Djibouti</option>
+                                    <option value="DOP">Dominican Republic</option>
+                                    <option value="XCD">Dominica</option>
+                                    <option value="EGP">Egypt</option>
+                                    <option value="ERN">Eritrea</option>
+                                    <option value="EEK">Estonia</option>
+                                    <option value="ETB">Ethiopia</option>
+                                    <option value="EUR">Euro</option>
+                                    <option value="FKP">Falkland Islands</option>
+                                    <option value="FJD">Fiji</option>
+                                    <option value="XPF">France</option>
+                                    <option value="GMD">Gambia</option>
+                                    <option value="GEL">Georgia</option>
+                                    <option value="DEM">Germany</option>
+                                    <option value="GHS">Ghana</option>
+                                    <option value="GIP">Gibraltar</option>
+                                    <option value="GRD">Greece</option>
+                                    <option value="GTQ">Guatemala</option>
+                                    <option value="GNF">Guinea</option>
+                                    <option value="GYD">Guyana</option>
+                                    <option value="HTG">Haiti</option>
+                                    <option value="HNL">Honduras</option>
+                                    <option value="HKD">HongKong</option>
+                                    <option value="HUF">Hungary</option>
+                                    <option value="ISK">Iceland</option>
+                                    <option value="INR">India</option>
+                                    <option value="IDR">Indonesia</option>
+                                    <option value="IRR">Iran</option>
+                                    <option value="IQD">Iraq</option>
+                                    <option value="ILS">Israel</option>
+                                    <option value="ITL">Italy</option>
+                                    <option value="JMD">Jamaica</option>
+                                    <option value="JPY">Japan</option>
+                                    <option value="JOD">Jordan</option>
+                                    <option value="KZT">Kazakhstan</option>
+                                    <option value="KES">Kenya</option>
+                                    <option value="KWD">Kuwait</option>
+                                    <option value="KGS">Kyrgystan</option>
+                                    <option value="LAK">Laos</option>
+                                    <option value="LVL">Latvia</option>
+                                    <option value="LBP">Lebanon</option>
+                                    <option value="LSL">Lesotho</option>
+                                    <option value="LRD">Liberia</option>
+                                    <option value="LYD">Libya</option>
+                                    <option value="LTL">Lithuania</option>
+                                    <option value="MOP">Macao</option>
+                                    <option value="MKD">Macedonia</option>
+                                    <option value="MGA">Madagascar</option>
+                                    <option value="MWK">Malawi</option>
+                                    <option value="MVR">Maldives</option>
+                                    <option value="MRO">Mauritania</option>
+                                    <option value="MUR">Mauritius</option>
+                                    <option value="MXN">Mexico</option>
+                                    <option value="MDL">Moldova</option>
+                                    <option value="MNT">Mongolia</option>
+                                    <option value="MAD">Morocco</option>
+                                    <option value="MZM">Mozambique</option>
+                                    <option value="MMK">Mayanmar</option>
+                                    <option value="NAD">Namibia</option>
+                                    <option value="NPR">Nepal</option>
+                                    <option value="ANG">Netherlands</option>
+                                    <option value="NZD">NewZealand</option>
+                                    <option value="NIO">Nicaragua</option>
+                                    <option value="NGN">Nigeria</option>
+                                    <option value="KPW">North Korea</option>
+                                    <option value="NOK">Norway</option>
+                                    <option value="OMR">Oman</option>
+                                    <option value="PKR">Pakistan</option>
+                                    <option value="PAB">Panama</option>
+                                    <option value="PGK">Papua New Guinea</option>
+                                    <option value="PYG">Paraguay</option>
+                                    <option value="PEN">Peru</option>
+                                    <option value="PHP">Philippines</option>
+                                    <option value="PLN">Poland</option>
+                                    <option value="QAR">Qatar</option>
+                                    <option value="RON">Romania</option>
+                                    <option value="RUB">Russia</option>
+                                    <option value="RWF">Rwanda</option>
+                                    <option value="SVC">Salvador</option>
+                                    <option value="WST">Samoa</option>
+                                    <option value="SAR">Saudi Arabia</option>
+                                    <option value="RSD">Serbia</option>
+                                    <option value="SCR">Seychelles</option>
+                                    <option value="SLL">Sierra Leone</option>
+                                    <option value="SGD">Singapore</option>
+                                    <option value="SKK">Slovakia</option>
+                                    <option value="SBD">Solomon Islands</option>
+                                    <option value="SOS">Somalia</option>
+                                    <option value="ZAR">South Africa</option>
+                                    <option value="KRW">South Korea</option>
+                                    <option value="LKR">Sri Lanka</option>
+                                    <option value="SHP">St. Helena And Ascension</option>
+                                    <option value="SDG">Sudan</option>
+                                    <option value="SRD">Suriname</option>
+                                    <option value="SZL">Swaziland</option>
+                                    <option value="SEK">Sweden</option>
+                                    <option value="CHF">Switzerland</option>
+                                    <option value="SYP">Syria</option>
+                                    <option value="STD">São Tomé and Príncipe</option>
+                                    <option value="TWD">Taiwan</option>
+                                    <option value="TJS">Tajikistan</option>
+                                    <option value="TZS">Tanzania</option>
+                                    <option value="THB">Thailand</option>
+                                    <option value="TOP">Tonga</option>
+                                    <option value="TTD">Trinidad &Tobago</option>
+                                    <option value="TND">Tunisia</option>
+                                    <option value="TRY">Turkey</option>
+                                    <option value="TMT">Turkmenistan</option>
+                                    <option value="UGX">Uganda</option>
+                                    <option value="UAH">Ukrain</option>
+                                    <option value="AED">United Arab Emirates</option>
+                                    <option value="GBP">United Kingdom(UK)</option>
+                                    <option value="UYU">Uruguay</option>
+                                    <option value="USD">United States of America(USA)</option>
+                                    <option value="VUV">Vanuatu</option>
+                                    <option value="VEF">Venezuela</option>
+                                    <option value="VND">Vietnam</option>
+                                    <option value="YER">Yemen</option>
+                                    <option value="ZMK">Zambia</option>
+                                    </select>
+                           </div>
+                            <div class="txt">
+                                <p id="text-to-copy">3.6</p>
+                                <p id="guidedFields">Price List Currency</p>
+                                <input type="text" id="currency-input" readonly>
+                            </div>
+                            <div class="txt">
+                                <p id="text-to-copy">3.7</p>
+                                <p id="guidedFields">Contract Currency to be used</p>
+                                <input id="billingCustomer" type="text" name="currencytobeUsed" value=""
+                                    style="background: white; font-size: 11px;">
+                            </div>
+                            <div class="txt">
+                                <p id="text-to-copy"></p>
+                                <p id="guidedFields" style="font-size: 13px;">Prepaid Deposits/Partner Discounts</p>
+                                <button id="oppData" hidden></button>
+                                <label for="oppData" id="oppIcon"></label>
+                            </div>
+
+                            <div class="txt">
+                                <p id="text-to-copy">3.8</p>
+                                <p id="guidedFields">Is BMC Subcontracting?</p>
+                                <input id="billingCustomer" type="text" name="Subcontracting" value="" readonly>
+                            </div>
+                            <div class="txt">
+                                <p id="text-to-copy">3.9</p>
+                                <p id="guidedFields">Delivery Area(Approval Flow)</p>
+                                <input id="billingCustomer" type="text" name="deliveryArea" value=""
+                                    style="background: white;">
+                            </div>
+
+                            <div class="txt">
+                                <p id="text-to-copy" style="border-left: none;"></p>
+                                <p id="guidedFieldsHead">Rate Card Details</p>
+                            </div>
+                            <div class="txt">
+                                <p id="text-to-copy">3.10</p>
+                                <p id="guidedFields">Rate Card Version</p>
+                                <input id="billingCustomer" type="text" name="rateCardVersion" value=""
+                                    style="background: white;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navside">
+                        <button class="dropdown-btn" id="sidetoggle4">4. Bid Estimation<i class="fa fa-angle-down"
+                                style="color: 1px solid black; font-size: 20px; float: right;"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <div class="txt">
+                                <p id="text-to-copy">4.1</p>
+                                <p id="guidedFields">Bid Estimation Details</p>
+                                <button id="bidData" onclick="openPopup()" hidden></button>
+                                <label for="bidData" id="bidIcon"><i class="fa-regular fa-folder"></i></label>
+                                <div class="popup-backdrop" id="myPopupBackdrop"></div>
+                            </div>
+                            <div class="popup" id="myPopup">
+                                <div class="popupBackground">
+                                    <input id="readPopupHead" type="text" value="BID ESTIMATION DETAILS" readonly>
+                                    <button id="popupIcon" onclick="closePopup()"><i
+                                            class="fa-solid fa-xmark"></i></button>
+                                </div>
+                                <div class="popupBtn">
+                                    <button class="generalBtn" id="sidetoggle4" style="color: gray;"
+                                        onclick="hiddenPopup('containerPopup')">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        General Details<i class="fa fa-angle-down"
+                                            style="font-size: 20px; float: left; color: #045679;"></i>
+                                    </button>
+                                    <div id="containerPopup">
+                                        <div class="txtPopup">
+                                            <input id="readPopup" type="text" value="DETAILS" readonly>
+                                            <input id="readPopup" type="text" value="OUTPUT" readonly>
+
+                                            <input id="readPopup" type="text" value="PROJECT START DATE" readonly>
+                                            <input id="editPopup" type="date" name="projectStartDate" value=""
+                                                readonly />
+
+                                            <input id="readPopup" type="text" value="PROJECT END DATE" readonly />
+                                            <input id="editPopup" type="date" name="estimated projectDuration" value="">
+
+                                            <input id="readPopup" type="text" value="WORK HOURS/DAY(DEFAULT)"
+                                                readonly />
+                                            <input id="editPopup" type="text" name="workHoursDay" value="8" readonly />
+
+                                            <input id="readPopup" type="text" value="WORK HOURS/DAY(OVERRIDE)"
+                                                readonly />
+                                            <input id="editPopup" type="text" name="workHoursOverride" value="0" />
+                                            <input id="readPopup" type="text"
+                                                value="TYPE OF RATE USED TO DISPLAY UOM IN QUOTE GRID" readonly />
+                                            <select name="typeOfRate" id="editPopup">
+                                                <option value="hours">Hours</option>
+                                                <option value="days">Days</option>
+                                                >
+                                                <!-- <input id="editPopup" type="text" name="typeOfRate" value="Hours" readonly /> -->
+
+                                                <input id="readPopup" type="text"
+                                                    value="TRAVEL AND LIVING EXPENSES ARE NOT INCLUDED IN THE" readonly>
+                                                <input id="editPopup" type="text" name="expenses" value="">
+                                        </div>
+                                    </div>
+                                    <button id="gddata" onclick="hiddenPopupTable('tbvalue')"><i
+                                            class="fa fa-angle-down"
+                                            style="font-size: 20px; color: #216c98;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bid
+                                        Estimation Table (Professional Services)</button>
+
+                                    <div id="tbvalue">
+                                        <table style="border-left: 1px solid lightgray;">
+                                            <thead>
+                                                <tr>
+                                                    <th>ROLES</th>
+                                                    <th>UNIT PRICE (HOURLY)</th>
+                                                    <th>BID PRICE(HOURLY)</th>
+                                                    <th>WORKLOAD (IN HOURLY)</th>
+                                                    <th>CSP WORKLOAD (IN HOURLY)</th>
+                                                    <th>CSP AVG COST(HOURLY)</th>
+                                                    <th>NON-BILLABLE CATEGORIES</th>
+                                                    <th>INTERCO-COUNTRY</th>
+                                                    <th>INTERCO-ROLE</th>
+                                                    <th>ROLE DESCRIPTION</th>
+                                                    <th>NOTES</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <select name="level" class="guideRole">
+                                                            <option value="" selected></option>
+                                                            <option value="37.5">L2 GRADUATE CONSULTANT</option>
+                                                            <option value="52.5">L3 ASSOCIATE CONSULTANT</option>
+                                                            <option value="52.5">L3 CONSULTANT</option>
+                                                            <option value="60">L4 PROJECT MANAGER</option>
+                                                            <option value="60">L4 SENIOR CONSULTANT</option>
+                                                            <option value="68.75">L5 GLOBAL PROGRAM MANAGER </option>
+                                                            <option value="68.75">L5 PRINCIPAL CONSULTANT</option>
+                                                            <option value="68.75">L5 SOLUTION ARCHITECT</option>
+                                                            <option value="52.5">L3 GSD ASSOCIATE CONSULTANT</option>
+                                                            <option value="52.5">L3 GSD CONSULTANT</option>
+                                                            <option value="60">L4 GSD PROJECT MANAGER</option>
+                                                            <option value="60">L4 GSD SENIOR CONSULTANT</option>
+                                                            <option value="68.75">L5 GSD GLOBAL PROGRAM MANAGER</option>
+                                                            >
+                                                    </td>
+                                                    <td id="col2"><input type="text" name="unitPrice" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <select name="level" class="guideRole">
+                                                            <option value="" selected></option>
+                                                            <option value="37.5">L2 GRADUATE CONSULTANT</option>
+                                                            <option value="52.5">L3 ASSOCIATE CONSULTANT</option>
+                                                            <option value="52.5">L3 CONSULTANT</option>
+                                                            <option value="60">L4 PROJECT MANAGER</option>
+                                                            <option value="60">L4 SENIOR CONSULTANT</option>
+                                                            <option value="68.75">L5 GLOBAL PROGRAM MANAGER </option>
+                                                            <option value="68.75">L5 PRINCIPAL CONSULTANT</option>
+                                                            <option value="68.75">L5 SOLUTION ARCHITECT</option>
+                                                            <option value="52.5">L3 GSD ASSOCIATE CONSULTANT</option>
+                                                            <option value="52.5">L3 GSD CONSULTANT</option>
+                                                            <option value="60">L4 GSD PROJECT MANAGER</option>
+                                                            <option value="60">L4 GSD SENIOR CONSULTANT</option>
+                                                            <option value="68.75">L5 GSD GLOBAL PROGRAM MANAGER</option>
+                                                            >
+                                                    </td>
+                                                    <td id="col2"><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <select name="level" class="guideRole">
+                                                            <option value="" selected></option>
+                                                            <option value="37.5">L2 GRADUATE CONSULTANT</option>
+                                                            <option value="52.5">L3 ASSOCIATE CONSULTANT</option>
+                                                            <option value="52.5">L3 CONSULTANT</option>
+                                                            <option value="60">L4 PROJECT MANAGER</option>
+                                                            <option value="60">L4 SENIOR CONSULTANT</option>
+                                                            <option value="68.75">L5 GLOBAL PROGRAM MANAGER </option>
+                                                            <option value="68.75">L5 PRINCIPAL CONSULTANT</option>
+                                                            <option value="68.75">L5 SOLUTION ARCHITECT</option>
+                                                            <option value="52.5">L3 GSD ASSOCIATE CONSULTANT</option>
+                                                            <option value="52.5">L3 GSD CONSULTANT</option>
+                                                            <option value="60">L4 GSD PROJECT MANAGER</option>
+                                                            <option value="60">L4 GSD SENIOR CONSULTANT</option>
+                                                            <option value="68.75">L5 GSD GLOBAL PROGRAM MANAGER</option>
+                                                            >
+                                                    </td>
+                                                    <td id="col2"><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <select name="level" class="guideRole">
+                                                            <option value="" selected></option>
+                                                            <option value="37.5">L2 GRADUATE CONSULTANT</option>
+                                                            <option value="52.5">L3 ASSOCIATE CONSULTANT</option>
+                                                            <option value="52.5">L3 CONSULTANT</option>
+                                                            <option value="60">L4 PROJECT MANAGER</option>
+                                                            <option value="60">L4 SENIOR CONSULTANT</option>
+                                                            <option value="68.75">L5 GLOBAL PROGRAM MANAGER </option>
+                                                            <option value="68.75">L5 PRINCIPAL CONSULTANT</option>
+                                                            <option value="68.75">L5 SOLUTION ARCHITECT</option>
+                                                            <option value="52.5">L3 GSD ASSOCIATE CONSULTANT</option>
+                                                            <option value="52.5">L3 GSD CONSULTANT</option>
+                                                            <option value="60">L4 GSD PROJECT MANAGER</option>
+                                                            <option value="60">L4 GSD SENIOR CONSULTANT</option>
+                                                            <option value="68.75">L5 GSD GLOBAL PROGRAM MANAGER</option>
+                                                            >
+                                                    </td>
+                                                    <td id="col2"><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <select name="level" class="guideRole">
+                                                            <option value="" selected></option>
+                                                            <option value="37.5">L2 GRADUATE CONSULTANT</option>
+                                                            <option value="52.5">L3 ASSOCIATE CONSULTANT</option>
+                                                            <option value="52.5">L3 CONSULTANT</option>
+                                                            <option value="60">L4 PROJECT MANAGER</option>
+                                                            <option value="60">L4 SENIOR CONSULTANT</option>
+                                                            <option value="68.75">L5 GLOBAL PROGRAM MANAGER </option>
+                                                            <option value="68.75">L5 PRINCIPAL CONSULTANT</option>
+                                                            <option value="68.75">L5 SOLUTION ARCHITECT</option>
+                                                            <option value="52.5">L3 GSD ASSOCIATE CONSULTANT</option>
+                                                            <option value="52.5">L3 GSD CONSULTANT</option>
+                                                            <option value="60">L4 GSD PROJECT MANAGER</option>
+                                                            <option value="60">L4 GSD SENIOR CONSULTANT</option>
+                                                            <option value="68.75">L5 GSD GLOBAL PROGRAM MANAGER</option>
+                                                            >
+                                                    </td>
+                                                    <td id="col2"><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <!-- Managed Services Table -->
+
+                                    <button id="gddata" onclick="hiddenPopupServiceTable('servicevalue')"><i
+                                            class="fa fa-angle-down"
+                                            style="font-size: 20px; color: #216c98;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bid
+                                        Estimation Table (Managed Services)</button>
+
+                                    <div id="servicevalue">
+                                        <table style="border-left: 1px solid lightgray; width: 100%;">
+                                            <thead>
+                                                <tr>
+                                                    <th>SERVICES</th>
+                                                    <th>MONTHLY FEE</th>
+                                                    <th>ENVIRONMENTS</th>
+                                                    <th>TERM IN MONTHS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><select name="level" id="">
+                                                            <option value="" selected></option>
+                                                            <option value="aws">AWS</option>
+                                                            <option value="1">1</option>
+                                                            <option value="1">1</option>
+                                                            ></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><select name="level" id="">
+                                                            <option value="" selected></option>
+                                                            <option value="aws">AWS</option>
+                                                            <option value="1">1</option>
+                                                            <option value="1">1</option>
+                                                            ></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><select name="level" id="">
+                                                            <option value="" selected></option>
+                                                            <option value="aws">AWS</option>
+                                                            <option value="1">1</option>
+                                                            <option value="1">1</option>
+                                                            ></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                    <td><input type="text" name="" id="bord" /></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Services Section Start -->
+                    <div class="navside">
+                        <button class="dropdown-btn" id="sidetoggle1">5.Services
+                            <i class="fa fa-angle-down" style="color: black; font-size: 20px; float: right;"></i>
+                        </button>
+                        <div class="dropdown-container">
+                                <div class="servicecont">
+                                    <div class="servicelabel">
+                                        <label
+                                            style="padding-left: 30px; padding-top: 11px; font-size: 11px; border-right: 2px solid lightgray;">Professional
+                                            Services</label>
+                                        <input type="checkbox" name="profServices" id="proffessional" hidden />
+                                        <label for="proffessional" id="proffessionalCircle"><i class="fa fa-circle-thin"
+                                                style="font-size: 30px; color:#6291a5; margin-top:5px; font-weight: 100; opacity: 0.7;"></i></label>
+
+                                    </div>
+                                    <div class="servicebox">
+                                        <label
+                                            style="padding-left: 29px; padding-top: 11px; font-size: 11px; border-right: 2px solid lightgray;">Management
+                                            Services</label>
+                                        <input type="checkbox" name="manageServices" id="management" hidden />
+                                        <label for="management" id="managementCircle"><i class="fa fa-circle-thin"
+                                                style="font-size:30px; color: #6291a5; margin-top:5px; font-weight: 100; opacity: 0.6;"></i></label>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Setup Start Section-->
+                <div class="navside">
+                    <button class="dropdown-btn" id="sidetoggle1">6.Project Setup Details
+                        <i class="fa fa-angle-down" style="color: black; font-size: 20px; float: right;"></i>
+                    </button>
+                    <!-- <div class="dropdown-container">
+                                   <form action=""><input type="text" name="new" id="send"
+                                           placeholder="Type your Note" /><button id="sent"><i class='fa fa-send-o blue-color'
+                                               style="color: #045679;"></i></button> </form>
+                               </div> -->
+                </div>
+
+                <!-- Learning Pass Start Section-->
+                <div class="navside">
+                    <button class="dropdown-btn" id="sidetoggle1">7.Learning Pass Credits Details
+                        <i class="fa fa-angle-down" style="color: black; font-size: 20px; float: right;"></i>
+                    </button>
+                    <!-- <div class="dropdown-container">
+                                       <form action=""><input type="text" name="new" id="send"
+                                               placeholder="Type your Note" /><button id="sent"><i class='fa fa-send-o blue-color'
+                                                   style="color: #045679;"></i></button> </form>
+                                   </div> -->
+                </div>
+                <button type="submit" class="guideApply">APPLY</button>
+
+            <!-- </form> -->
+        </div>
+        <!-- </form> -->
+
+        <div id="questions" style="display: none;">
+            <div id="section-container"></div>
+            <button id="add-section-btn"><i class="fa fa-plus"></i>&nbsp;ADD SECTION</button>
+        </div>
+    </div>
+    <div class="main-content" id="mainContent">
+        <div class="guidedheader">
+            <div class="downloadguide">
+                <button class="xlbutton2" onclick="">
+                    <span class="fa fa-file-excel-o"></span></button>
+                <div>
+                    <label>DOWNLOAD</label>
+                </div>
+            </div>
+            <div class="guideapprove">
+                <a class="approveguide" href="#">&nbsp;&nbsp;SUBMIT FOR APPROVAL&nbsp;&nbsp;</a>
+            </div>
+            <!-- <div class="quotedetails">
+                    <a href="#"><button class="product active">Price</button></a>
+                    <a href="#"><button class="product">Cost</button></a>
+                    <a href="#"><button class="product">Quantity</button></a>
+                    <a href="#"><button class="product">FTE</button></a>
+                </div> -->
+        </div>
+        <div class="guidedetails">
+            <button type="button" class="guidebbtn" id="clickmeguide" onclick="myFunctionguide()">
+                <span class="fa fa-angle-up"></span></button>
+            <div id="guideid" class="hiddenguide">
+                <div class="guideleft">
+                    <div class="containerGA">
+                        <div id="contentG1">
+                            <input class="" type="text">
+                            <label>QUOTE NAME</label>
+                        </div>
+                        <div id="contentG2">
+                            <input class="" type="text" placeholder="">
+                            <label>PRICE MODEL</label>
+                        </div>
+                    </div>
+                    <div class="containerGB">
+                        <div id="contentG3">
+                            <input class="" type="text">
+                            <label>SALES ORG</label>
+                        </div>
+                        <div id="contentG4">
+                            <input class="" type="text" placeholder="">
+                            <label>CURRENCY</label>
+                        </div>
+                        <div id="contentG5">
+                            <input class="" type="text">
+                            <label>DURATION</label>
+                        </div>
+                        <div id="contentG6">
+                            <input class="" type="text" placeholder="">
+                            <label>AVG RATE</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="guideright">
+                    <div class="containerGC">
+                        <div id="contentG7">
+                            <input class="" type="number">
+                            <label>LIST PRICE</label>
+                        </div>
+
+                        <div id="contentG8">
+                            <input class="" type="number" placeholder="">
+                            <label>DISCOUNT</label>
+                        </div>
+                        <div id="contentG9">
+                            <input class="" type="number" placeholder="">
+                            <label>NET PRICE</label>
+                        </div>
+                    </div>
+                    <div class="containerGD">
+                        <div id="contentG10">
+                            <input class="" type="number">
+                            <label>EXPENSES</label>
+                        </div>
+
+                        <div id="contentG11">
+                            <input class="" type="number" placeholder="">
+                            <label>MARGIN</label>
+                        </div>
+                        <div id="contentG12">
+                            <input class="" type="number" placeholder="">
+                            <label>COST</label>
+                        </div>
+                    </div>
+                </div>
+                <div id="contentG13">
+                    <textarea name="" id="" cols="" rows=""></textarea>
+                    <label>DESCRIPTION</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- rightsidebar -->
+    <div>
+        <div class="slide">
+            <div id="mySidebar" class="sidebar1" style="top:73px;">
+                <!-- <a href="javascript:void(0)" >x</a> -->
+                <div class="navside">
+                    <button class="dropdown-btn" id="sidetoggle1">BID TEAM <i class="fa fa-angle-down"
+                            style="color: black; font-size: 20px; float: right;"></i>
+                    </button>
+                    <!-- <div class="dropdown-container">
+                           <p>${model}-ownerName</p>
+                           <form action="">
+                               <input type="search" name="ownerName" id="oname" placeholder="Enter Name to be searched" required />
+                               <input type="submit" id="search" hidden>
+                               <label for="search"><i class="fa-solid fa-check"></i></label>
+                           </form>
+                       </div> -->
+                </div>
+                <div class="navside">
+                    <button class="dropdown-btn" id="sidetoggle">FILES <i class="fa fa-angle-down"
+                            style="color: black; font-size: 20px; float: right;"></i>
+                    </button>
+                    <!-- <div class="dropdown-container">
+                            <form action=""><input type="file" id="upload" name="doc" hidden />
+                                <label id="upl"    for="upload">+</label>
+                            </form>
+                        </div> -->
+                </div>
+                <div class="navside">
+                    <button class="dropdown-btn" id="sidetoggle1">NOTES <i class="fa fa-angle-down"
+                            style="color: black; font-size: 20px; float: right;"></i>
+                    </button>
+                    <!-- <div class="dropdown-container">
+                            <form action=""><input type="text" name="new" id="send"placeholder="Type your Note" />
+                                    <button id="sent1ss"><i class='fa fa-send-o blue-color'
+                                        style="color: #045679;"></i></button> </form>
+                        </div> -->
+                </div>
+                <div class="navside">
+                    <button class="dropdown-btn" id="sidetoggle2">EXTERNAL REFERENCES
+                        <i class="fa fa-angle-down" style="color: black; font-size: 20px; float: right;"></i>
+
+                    </button>
+                    <!-- <div class="dropdown-container">
+                            <form action=""><input type="text" name="id" id="eid" value="$model"><label for=""
+                                    id="lab">EXTERNAL
+                                    REFERENCES ID</label><br>
+                                <input type="text" name="id" id="eid2" value="$model">
+                                <label for="" id="lab">EXTERNAL REFERENCES ID 2</label>
+                                <br><input type="text" name="id" id="cfid" value="$model"><label for="" id="lab">CRM
+                                    REFERENCE</label>
+                            </form>
+                        </div> -->
+                </div>
+                <div class="navside">
+                    <button class="dropdown-btn" id="sidetoggle1">CUSTOM FIELDS
+                        <i class="fa fa-angle-down" style="color: black; font-size: 20px; float: right;"></i>
+                    </button>
+                    <!-- <div class="dropdown-container">
+                           <form action=""><input type="text" name="new" id="send"
+                                   placeholder="Type your Note" /><button id="sent1ss"><i class='fa fa-send-o blue-color'
+                                       style="color: #045679;"></i></button> </form>
+                       </div> -->
+                </div>
+                <div class="navside">
+                    <button class="dropdown-btn" id="sidetoggle3">TIMESTAMP
+                        <i class="fa fa-angle-down" style="color: black; font-size: 20px; float: right;"></i>
+
+                    </button>
+                    <!-- <div class="side-container"> <span id="time">CREATED BY:</span><span
+                                id="time1">${model}</span><br>
+
+                            <hr id="lhr"> <span id="time">CREATED:</span><span id="time1">${model}</span><br>
+                            <hr id="lhr"> <span id="time">LAST MODIFIED BY:</span><span id="time1">${model}</span><br>
+
+                            <hr id="lhr"> <span id="time">LAST MODIFIED</span><span id="time1">${model}</span><br>
+                            <hr id="lhr"> <span id="time">REVISION</span><span id="time1">${model}</span><br>
+                        </div> -->
+                </div>
+                <div class="navside">
+                    <button class="dropdown-btn" id="sidetoggle1">EXCHANGE RATES <i class="fa fa-angle-down"
+                            style="color: black; font-size: 20px; float: right;"></i>
+                    </button>
+                    <!-- <div class="dropdown-container">
+                           <form action=""><input type="text" name="new" id="send"
+                                   placeholder="Type your Note" /><button id="sent1ss"><i class='fa fa-send-o blue-color'
+                                       style="color: #045679;"></i></button> </form>
+                       </div> -->
+                </div>
+                <div class="navside">
+                    <button class="dropdown-btn" id="sidetoggle1">DOC TYPES <i class="fa fa-angle-down"
+                            style="color: black; font-size: 20px; float: right;"></i>
+                    </button>
+                    <!-- <div class="dropdown-container">
+                       <form action=""><input type="text" name="new" id="send"
+                               placeholder="Type your Note" /><button id="sent1ss"><i class='fa fa-send-o blue-color'
+                                   style="color: #045679;"></i></button> </form>
+                   </div> -->
+                </div>
+                <div class="navside">
+                    <button class="dropdown-btn" id="sidetoggle1">DOCUMENT EXPORT NAME <i class="fa fa-angle-down"
+                            style="color: black; font-size: 20px; float: right;"></i>
+                    </button>
+                    <!-- <div class="dropdown-container">
+                   <form action=""><input type="text" name="new" id="send"
+                           placeholder="Type your Note" /><button id="sent1ss"><i class='fa fa-send-o blue-color'
+                               style="color: #045679;"></i></button> </form>
+               </div>-->
+                </div>
+                <div class="navside">
+                    <button class="dropdown-btn" id="sidetoggle4">GENERATE WORD DOCS<i class="fa fa-angle-down"
+                            style="color: 1px solid black; font-size: 20px; float: right;"></i>
+                    </button>
+                    <!--   <div class="dropdown-container">
+                            <div class="txt">
+                                <p id="text-to-copy"><a href="https://chat.openai.com/chat" style="font-size: 13px;"
+                                        target="_blank">file:///C:/Usfyugfgsyugfsgfgsdugfdyusfdhfdhdhfchdrfdhjavxjvgsugdguzlivdshiuvdhlihvihvjhvhdasdddsfegesrhytryu6trdujiy</a>
+                                </p>
+                            </div>
+                            <div class="bnt"><button id="cpbtn" onclick="copyText()"><i class="fa fa-clone"
+                                        style="font-size:15px; z-index: 2;"></i></button>
+                            </div>
+                        </div> -->
+                </div>
+                <div class="navside"> <button class="dropdown-btn" id="sidetoggle5">GENERATES PDFS
+                        <i class="fa fa-angle-down" style="color: black; font-size: 20px; float: right;"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <!-- <div class="txt">
+                                <p id="link-to-copy"><a href="https://chat.openai.com/chat" style="font-size: 13px;"
+                                        target="_blank">file:///C:/Usfyugfgsyugfsgfgsdugfdyusfdhfdhdhfchdrfdhjavxjvgsugdguzlivdshiuvdhlihvihvjhvhdasdddsfegesrhytryu6trdujiy</a>
+                                </p>
+                            </div>
+                            <div class="bnt"></div> <button id="linkbtn" onclick="copyLink()"><i
+                                    class="fa fa-clone"></i></button> -->
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div><button id="main" class="openbtn" onclick="openClose()">
+                <i class="fa-light fa-less-than"></i></button></div>
+    </div>
+    <!-- ------------ -->
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="GuidedSellingleftbar.js"></script>
+    <script src="Guidedselling.js"></script>
+   <script src="../Required/Navigation.js"></script>
+    <script src="../Required/sideBar.js"></script>
+    <script src="GuidedSellingQuestions.js"></script>
+    <script src="GuidedCountrycurriencies.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Listing</title>
+    <link rel="stylesheet" href="../Required/Style.css">
+    <link rel="stylesheet" href="Accounts.css">
+    <link rel="stylesheet"  href="rightside.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="AccountListing.css">
+</head>
+<body>
+    <div class="navandbread">
+   <nav>
+    <div class="search">
+        <div class="icon"></div>
+        <div class="input" >
+            <input type="text" placeholder="Search..." id="mysearch">
+            </div>
+            <span class="clear" onclick="document.getElementById('mysearch').value= ''"></span>
+        </div>
+    <!-- <div class="search-bar">
+        <input type="text" placeholder="search....">
+        <a href=""><li class="fas fa-search"></li></a>
+        </div>-->      
+      <div class="navset"> 
+        <span style="margin-right: 30px;"><a href="#"><button style="padding-top: 4px;font-family: 'Courier New';font-weight: bold;">DEFAULT</button></a></span>
+            <span class="icon"><a href="#"><i class="fas fa-clock" style="font-size:20px;color: azure;margin-right: 31px;"></i></a></span>
+            <span class="icon"><a href="#"><i class="fa fa-bell" style="font-size:20px;color: azure; margin-right: 31px;"></i></a></span>
+            <div class="dropdown">
+                <li onclick="myFunction()"  class="fa fa-user" style="font-size:20px;color: azure; margin-right: 20px;"></li>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="MyProfile.html">My Profile</a>
+                  <a href="#about">What's New?</a>
+                  <a href="#contact">Logout BMC Software</a>
+                </div>
+              </div>     
+   </nav>
+   <div class="bread">
+   <ul class="breadcrumbs" style="padding-top: 0;padding-bottom: 0;">
+        <li class="breadcrumbs--item">
+            <a href="index.html" class="breadcrumbs--link breadcrumbs" style="display:inline;text-decoration:none">HOME</a>
+         
+        <li class="breadcrumbs--item">
+            <a href="#" class="breadcrumbs--link breadcrumbs--link--active">ACCOUNTS</a>
+        <!-- </li> <li class="breadcrumbs--item">
+            <a href="#" class="breadcrumbs--link">QUOTES</a>
+        </li> -->
+        <a href="Accounts.html"><i class="fa fa-pen" style="margin-left:1048px;border:1px solid black;padding:7px;font-size: 17px; border: none;color:black"></i></a>
+        
+        <a href="AccontsListing.html" style="text-decoration: none;color:white;"><i class="fa fa-table" style="border:1px solid black;padding:7px;font-size: 17px;border: none;background-color:#216c98"></i></a>
+      </li> 
+    </ul>
+    <hr class="hr" style="height:1.5px">
+    </div>
+   </div>
+    <div class="content-bar" style="top:68px;">
+    <ul>
+        <a href="home.html"><li>
+            <span class="icon"><i class="fas fa-home"></i></span>
+            <span class="item">HOME</span>
+        </li></a>
+        <a href="Accounts.html"><li class="active1">
+            <span class="icon"><i class="fa-solid fa-book-open"></i></span>
+            <span class="item">ACCOUNTS</span>
+        </li></a>
+        <a href="Quotes.html"><li>
+            <span class="icon"><i class="fa fa-dollar"></i></span>
+            <span class="item">QUOTES</span>
+        </li></a>
+        <a href="Demand.html"><li>
+            <span class="icon"><i class="fa fa-user"></i></span>
+            <span class="item">DEMAND</span>
+        </li></a>
+        <a href="Forecast.html"><li>
+            <span class="icon"><i class="fa fa-line-chart"></i></span>
+            <span class="item">FORECAST</span>
+        </li></a>
+        <a href="Catalog.html"><li>
+            <span class="icon"><i class="fa fa-eye"></i></span>
+            <span class="item">CATALOG</span>
+           </li> </a>
+        <a href="People.html"><li>
+            <span class="icon"><i class="fa fa-cog"></i></span>
+            <span class="item">ADMIN</span>
+            </li></a>
+    </ul>
+    </div>
+    <div>
+        <div class="helpbox" style="z-index: 2;">
+            <button><a href="#divOne" class="button1"><img src="HelpIcon.png" alt="Icon" style="height:35px;width:35px;"></a></button>      
+        </div>
+        <div class="overlay" id="divOne">
+            <div class="wrapper">
+                <p class="head">LOG A SUPPORT REQUEST</p><br>
+                <a href="#" class="close">&times;</a>
+                <div class="content">
+                    <div class="container1">
+                        <form>
+                            
+                            <label>Summary:</label>
+                            <input type="text" class="help">
+                            <label>Description:</label>
+                            <textarea rows="8" cols=""></textarea>
+                            <label>Priority(Optional):</label><br>
+                           <select name="format" id="format">
+                            <option selected disabled>Select..</option>
+                           <option value="critical">Critical</option>
+                           <option value="high">High</option>
+                           <option value="medium">Medium</option>
+                           <option value="low">Low</option>
+                           <option value="lowest">Lowest</option>
+                           </select><br><br>
+                           <label>Attachment(optional):</label><br>
+                           <input type="file"><br><br>
+                           <label>Your contact e-mail:</label><br>
+                           <input type="email" class="em"><br><br>
+                           <input type="submit" value="Send">
+                        
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- account -->
+        <!-- ====================================================== -->
+        <div class="acl">
+           <b>ACCOUNTS LISTING</b>
+        </div>
+        <button class="xlbutton" onclick="exportData()">
+            <span class="fa fa-file-excel-o"></span></button>
+        <div class="list">
+            <table id="tblStocks" cellpadding="0" cellspacing="0">
+                <tr class="ellipsis">
+                    <th>Account Name</th>
+                    <th>Owner</th>
+                    <th>Teritory</th>
+                    <th>Vertical</th>
+                    <th>Industry</th>
+                    <th>xcelaerate partner</th>
+                    <th>Commercial Region</th>
+                    <th>Commercial Sub Region</th>
+                    <th>Vat Number</th>
+                    <th>Delivery Area</th>
+                  </tr>
+                  <tr>
+                    <td>Life HealthCare INC</td>
+                    <td>A</td>
+                    <td>35.58</td>
+                    <td>38.45</td>
+                    <td>+8.06</td>
+                    <td>35.58</td>
+                    <td>38.45</td>
+                    <td>+8.06</td>
+                    <td>38.45</td>
+                    <td>+8.06</td>
+                  </tr>
+                  <tr>
+                    <td>Life HealthCare INC</td>
+                    <td>A</td>
+                    <td></td>
+                    <td></td>
+                    <td>+8.06</td>
+                    <td>35.58</td>
+                    <td>38.45</td>
+                    <td>+8.06</td>
+                    <td>38.45</td>
+                    <td>+8.06</td>
+                  </tr>
+                   <tr>
+                    <td>Life HealthCare INC</td>
+                    <td>A</td>
+                    <td></td>
+                    <td></td>
+                    <td>+8.06</td>
+                    <td>35.58</td>
+                    <td>38.45</td>
+                    <td>+8.06</td>
+                    <td>38.45</td>
+                    <td>+8.06</td>
+                  </tr>
+                  <tr>
+                    <td>Life HealthCare INC</td>
+                    <td>A</td>
+                    <td></td>
+                    <td></td>
+                    <td>+8.06</td>
+                    <td>35.58</td>
+                    <td>38.45</td>
+                    <td>+8.06</td>
+                    <td>38.45</td>
+                    <td>+8.06</td>
+                  </tr>
+                  
+            </table>
+            <br />
+            <!-- <button onclick="exportData()">
+                <span class="glyphicon glyphicon-download"></span>
+                Download Excel</button> -->
+
+
+        </div>
+        <!-- ====================================================== -->
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script type="text/javascript">
+        $(document).on('click',' ul a li',function(){
+            $(this).addClass('active1').siblings().removeClass('active1')
+        })
+    </script>
+    <script>
+        function openNav(){
+            document.getElementById("mySidebar").style.width="250px";
+            document.getElementById("main").style.marginLeft="250px";
+        }
+        function closeNav(){
+            document.getElementById("mySidebar").style.width="0";
+            document.getElementById("main").style.marginLeft="0";
+        }
+        
+    </script>
+    <script src="tablehide.js"></script>
+    <script src="showmore.js"></script>
+     <script src="serachicon.js"></script>
+   <script src="profile dropdown.js"></script>
+   <script src="accountflex.js"></script>
+   <script src="AccountListing.js"></script>
+</body>
+</html>
+
+
+
+
+
+

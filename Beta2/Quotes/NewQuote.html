@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Design</title>
+    <link rel="stylesheet" href="../Required/Style.css">
+    <link rel="stylesheet" href="NewQuotes.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div>
+        <nav>
+            <!-- <div class="search-bar">
+        <input type="text" placeholder="search....">
+        <a href=""><li class="fas fa-search"></li></a>
+        </div>  -->
+            <div class="search">
+                <div class="icon"></div>
+                <div class="input">
+                    <input type="text" placeholder="Search..." id="mysearch">
+                </div>
+                <span class="clear" onclick="document.getElementById('mysearch').value= ''"></span>
+            </div>
+            <div class="navset">
+                <span style="margin-right: 30px;"><a href="#"><button
+                            style="padding-top:4px;font-family: 'Courier New';font-weight: bold;">DEFAULT</button></a></span>
+                <span class="icon"><a href="#"><i class="fas fa-clock"
+                            style="font-size:20px;color: azure;margin-right: 31px;"></i></a></span>
+                <span class="icon"><a href="#"><i class="fa fa-bell"
+                            style="font-size:20px;color: azure; margin-right: 31px;"></i></a></span>
+                <div class="dropdown">
+                    <li onclick="myFunction()" class="fa fa-user"
+                        style="font-size:20px;color: azure; margin-right: 20px;"></li>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="../Profile/MyProfile.html">My Profile</a>
+                        <a href="#">What's New?</a>
+                        <a href="#">Logout DealDocx Software</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="bread">
+            <ul class="breadcrumbs" style="padding-top: 0;padding-bottom: 0;">
+                <li class="breadcrumbs--item">
+                    <a href="index.html" class="breadcrumbs--link breadcrumbs"
+                        style="display:inline;text-decoration:none">CompanyName</a>
+
+                <li class="breadcrumbs--item">
+                    <a href="#" class="breadcrumbs--link breadcrumbs--link--active">OppurtinityName</a>
+
+                <li class="breadcrumbs--item">
+                    <a href="../Quotes/NewQuote.html" class="breadcrumbs--link breadcrumbs--link--active">New Quote</a>
+
+                    <!-- </li> <li class="breadcrumbs--item">
+    <a href="#" class="breadcrumbs--link">QUOTES</a>
+</li> -->
+
+                    <a href="#"><i class="fa fa-pen"
+                            style="margin-left:850px;border:1px solid black;padding:7px;background-color: #216c98;font-size: 17px; border: none;color: white;"></i></a>
+
+                    <i class="fa fa-scroll"
+                        style="border:1px solid black;padding:7px;font-size: 17px;border: none; color: gray;"></i>
+
+                    <a href="" style="text-decoration: none;color: black;"><i class="fa fa-table"
+                            style="border:1px solid black;padding:7px;font-size: 17px;border: none;"></i></a>
+                </li>
+            </ul>
+            <hr class="hr" style="height:1.5px;">
+        </div>
+    </div>
+    <div class="content-bar" style="top:67px;">
+        <ul>
+
+            <a href="../Home/Home.html">
+                <li>
+                    <span class="icon"><i class="fas fa-home" style="font-size:20px"></i></span>
+                    <span class="item">HOME</span>
+                </li>
+            </a>
+            <a href="../Accounts/Accounts.html">
+                <li>
+                    <span class="icon"><i class="fa-solid fa-book-open"></i></span>
+                    <span class="item">ACCOUNTS</span>
+                </li>
+            </a>
+            <a href="Quotes.html">
+                <li>
+                    <span class="icon"><i class="fa fa-dollar"></i></span>
+                    <span class="item">QUOTES</span>
+                </li>
+            </a>
+            <a href="Demand.html">
+                <li>
+                    <span class="icon"><i class="fa fa-user"></i></span>
+                    <span class="item">DEMAND</span>
+                </li>
+            </a>
+            <a href="Forecast.html">
+                <li>
+                    <span class="icon"><i class="fa fa-line-chart"></i></span>
+                    <span class="item">FORECAST</span>
+                </li>
+            </a>
+            <a href="../Catalog/Catalog.html">
+                <li>
+                    <span class="icon"><i class="fa fa-eye"></i></span>
+                    <span class="item">CATALOG</span>
+                </li>
+            </a>
+            <a href="../People/People.html">
+                <li>
+                    <span class="icon"><i class="fa fa-cog"></i></span>
+                    <span class="item">ADMIN</span>
+                </li>
+            </a>
+        </ul>
+    </div>
+    <div>
+        <div class="helpbox">
+            <button><a href="#divOne" class="button1"><img src="../Required/HelpIcon.png" alt="Icon"
+                        style="height:35px;width:35px;"></a></button>
+        </div>
+        <div class="overlay" id="divOne">
+            <div class="wrapper">
+                <p class="head">LOG A SUPPORT REQUEST</p><br>
+                <a href="#" class="close">&times;</a>
+                <div class="content">
+                    <div class="container1">
+                        <form>
+
+                            <label>Summary:</label>
+                            <input type="text" class="help-input">
+                            <label>Description:</label>
+                            <textarea rows="8"></textarea>
+                            <label>Priority(0ptional):</label><br>
+                            <select name="priority" id="format">
+                                <option selected disabled>Select..</option>
+                                <option value="critical">Critical</option>
+                                <option value="high">High</option>
+                                <option value="medium">Medium</option>
+                                <option value="low">Low</option>
+                                <option value="lowest">Lowest</option>
+                            </select><br><br>
+                            <label>Attachment(optional):</label><br>
+                            <input type="file"><br><br>
+                            <label>Your contact e-mail:</label><br>
+                            <input type="email" class="em"><br><br>
+                            <input type="submit" value="Send">
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="row-newquote">
+            <div class="left-newquote">
+                <div class="ugs">
+                    <a href="../Oppurtunities/OpportunityData.html" style="color:white; text-decoration: none;">
+                        <header>
+                            <i class="fa-solid fa-less-than" style="padding-right:7px; padding-left: -7px;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp; NEW QUOTE</header>
+            
+                </div>
+                <div class="template">
+                    <button class="quotebtn">TEMPLATE</button>
+                    <button class="quotebtn">PREVIOUS QUOTE</button>
+                    <button class="quotebtn">GUIDED SELLING</button>
+                    <button class="quotebtn">BLANK QUOTE</button>
+                </div>
+            </div>
+            <!-- End of left Section -->
+            <div class="right-newquote"></div>
+        </div>
+
+    </div>
+    <script src="../Required/Navigation.js"></script>
+
+</body>
+
+</html>

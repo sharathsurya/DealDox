@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Design</title>
+    <link rel="stylesheet" href="../Required/Style.css">
+    <link rel="stylesheet" href="MyProfile.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+</head>
+<body>
+    <div class="navandbread1">
+    <!-- <div> -->
+        <nav>
+         <div class="search">
+             <div class="icon"></div>
+             <div class="input" >
+                 <input type="text" placeholder="Search..." id="mysearch">
+                 </div>
+                 <span class="clear" onclick="document.getElementById('mysearch').value= ''"></span>
+             </div>
+         <!-- <div class="search-bar">
+             <input type="text" placeholder="search....">
+             <a href=""><li class="fas fa-search"></li></a>
+             </div>-->      
+           <div class="navset"> 
+             <span style="margin-right: 30px;"><a href="#"><button style="padding-top: 4px;font-family: 'Courier New';font-weight: bold;">DEFAULT</button></a></span>
+                 <span class="icon"><a href="#"><i class="fas fa-clock" style="font-size:20px;color: azure;margin-right: 31px;"></i></a></span>
+                 <span class="icon"><a href="#"><i class="fa fa-bell" style="font-size:20px;color: azure; margin-right: 31px;"></i></a></span>
+                 <div class="dropdown">
+                     <li onclick="myFunction()"  class="fa fa-user" style="font-size:20px;color: azure; margin-right: 20px;"></li>
+                     <div id="myDropdown" class="dropdown-content">
+                       <a href="MyProfile.html">My Profile</a>
+                       <a href="#about">What's New?</a>
+                       <a href="#contact">Logout BMC Software</a>
+                     </div>
+                   </div>     
+        </nav>
+        <div class="bread">
+        <ul class="breadcrumbs">
+             <li class="breadcrumbs--item">
+                 <a href="../Home/Home.html" class="breadcrumbs--link breadcrumbs" style="display:inline;text-decoration:none">HOME</a>
+             </li> 
+             <li class="breadcrumbs--item">
+                 <a href="#" class="breadcrumbs--link breadcrumbs--link--active">MY PROFILE</a>
+             <!-- </li> <li class="breadcrumbs--item">
+                 <a href="#" class="breadcrumbs--link">QUOTES</a>
+             </li> -->
+            </ul>      
+         <hr class="hr">
+      </div>
+    <!-- </div> -->
+</div>
+    <div class="content-bar">
+    <ul>
+        <a href="../Home/Home.html"><li class="active1">
+            <span class="icon"><i class="fas fa-home"></i></span>
+            <span class="item">HOME</span>
+        </li></a>
+        <a href="../Accounts/Accounts.html"><li>
+            <span class="icon"><i class="fa-solid fa-book-open"></i></span>
+            <span class="item">ACCOUNTS</span>
+        </li></a>
+        <a href="Quotes.html"><li>
+            <span class="icon"><i class="fa fa-dollar"></i></span>
+            <span class="item">QUOTES</span>
+        </li></a>
+        <a href="Demand.html"><li>
+            <span class="icon"><i class="fa fa-user"></i></span>
+            <span class="item">DEMAND</span>
+        </li></a>
+        <a href="Forecast.html"><li>
+            <span class="icon"><i class="fa fa-line-chart"></i></span>
+            <span class="item">FORECAST</span>
+        </li></a>
+        <a href="../Catalog/Catalog.html"><li>
+            <span class="icon"><i class="fa fa-eye"></i></span>
+            <span class="item">CATALOG</span>
+            </li></a>
+        <a href="../People/People.html"><li>
+            <span class="icon"><i class="fa fa-cog"></i></span>
+            <span class="item">ADMIN</span>
+            </li></a>
+    </ul>
+    </div>
+    <div>
+        <div class="helpbox">
+            <button class="help"><a href="#divOne" class="button1"><img src="../Required/HelpIcon.png" alt="Icon" style="height:35px;width:35px;"></a></button>      
+        </div>
+        <div class="overlay" id="divOne">
+            <div class="wrapper">
+                <p class="head">LOG A SUPPORT REQUEST</p><br>
+                <a href="#" class="close">&times;</a>
+                <div class="content">
+                    <div class="container1">
+                        <form>
+                            
+                            <label>Summary:</label>
+                            <input type="text">
+                            <label>Description:</label>
+                            <textarea rows="" cols=""></textarea>
+                            <label>Priority(Optional):</label>
+                           <select>
+                            <option>Select...</option>
+                           <option>Critical</option>
+                           <option>High</option>
+                           <option>Medium</option>
+                           <option>Low</option>
+                           <option>Lowest</option>
+                           </select><br><br>
+                           <label>Attachment(Optional):</label><br>
+                           <input type="file"><br><br>
+                           <label>Your contact e-mail:</label><br>
+                           <input type="text"><br>
+                           <input type="submit" value="Send">
+                        
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="myprofile" >
+            <div id="myprofileheader">MY PROFILE</div>
+            <form>
+                <div class="grid-container" style="margin-left: 66px;">
+                    <div class="left-grid-item1">
+                        <i class="fa fa-circle" aria-hidden="true"></i> 
+                        <a class="reauthenticate" href="#">&nbsp;REAUTHENTICATE SALESFORCE&nbsp;</a>
+                    </div>
+                    <div class="right-grid-item2">
+            
+                        <div class="containerP1">
+                            <div id="contentP1">
+                                <input class="" type="text" readonly>
+                                <label>FIRST NAME</label>
+                            </div>
+                            <div id="contentP1">
+                                <input class="" type="text" readonly>
+                                <label>LAST NAME</label>
+                            </div>
+                        </div>
+                        <div class="containerP2">
+                            <div id="contentP2">
+                                <input class="" type="text" readonly>
+                                <label>TITLE</label>
+                            </div>
+                            <div id="contentP2">
+                                <input class="" type="text" readonly>
+                                <label>MANAGER</label>
+                            </div>
+                        </div>
+                        <div class="containerP3">
+                            <div id="contentP3">
+                                <input class="" type="text" readonly>
+                                <label>PHONE</label>
+                            </div>
+                            <div id="contentP3">
+                                <input class="" type="email">
+                                <label>EMAIL</label>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    </div>
+                    <div class="role">
+                        <b>ROLE</b>
+                    </div>
+                   
+                    <div class="roles">   
+                       <i>Roles are defined in the Admin Security section on the left</i>
+                   </div>
+                   <form>
+                   <div class="containerP4">
+                    <div id="contentP4A">   
+                        <input class="" type="checkbox">
+                        <label>INTEGRATION ACCESS ONLY</label>
+                    </div>
+                    <div id="contentP4B">
+                        <a class="delete1" href="#">&nbsp;DELETE REFRESH TOKEN&nbsp;</a>
+                        <label></label>
+                    </div>
+                    </div>
+                    <div class="containerP5">
+                        <div id="contentP5">
+                            <input class="" type="text">
+                            <label>SECURITY ROLE</label>
+                        </div>
+                        <div id="contentP5">
+                            <input class="" type="text">
+                            <label>PASSWORD EXPIRATION DATE</label>
+                        </div>
+                        </div>
+                </form>
+                <div class="preferences">
+                <b>PREFERENCES</b>
+                </div>
+                <form>
+                    <div class="containerP6">
+                        <div id="contentP6"> <select>
+                            <option selected disabled></option>
+                            <option>AFRICA</option>
+                            <option>ALL OTHER AP</option>
+                            <option>AP-ALL OTHER</option>
+                            <option>AP-AUS/JP</option>
+                            <option>AP-CHINA</option>
+                            <option>AP-INDIA</option>
+                            <option>ARGENTINA</option>
+                            <option>AUSTRALIA</option>
+                            </select>
+                            <label>ORG</label>
+                        </div>
+                        <div id="contentP6">
+                            <select>
+                                <option selected disabled></option>
+                                <option value="">AFRICA/ABIDJAN(FEBRUARY 16TH,6:40AM)</option>
+                                <option value="">AFRICA/ACCRA(FEBRUARY 16TH,6:40AM)</option>
+                                <option value="">AFRICA/ADDIS_ABABA(FEBRUARY 16TH,9:40AM)</option>
+                                <option value="">AFRICA/ALGIERS(FEBRUARY 16TH,7:40AM)</option>
+                                <option value="">AFRICA/ASMARA(FEBRUARY 16TH,9:40AM)</option>
+                                <option value="">AFRICA/ASMERA(FEBRUARY 16TH,9:40AM)</option>
+                                <option value="">AFRICA/BAMAKO(FEBRUARY 16TH,6:40AM)</option>
+                                <option value="">AFRICA/BANGUI(FEBRUARY 16TH,7:40AM)</option>
+                            </select>
+                            <label>TIME ZONE</label>
+                        </div>
+                    </div>
+                    <div class="containerP7">
+                        <div id="contentP7"> <select>
+  <option selected disabled></option>
+  <option value="Afrikaans">Afrikaans</option>
+  <option value="Albanian">Albanian</option>
+  <option value="Arabic">Arabic</option>
+  <option value="Armenian">Armenian</option>
+  <option value="Basque">Basque</option>
+  <option value="Bengali">Bengali</option>
+  <option value="Bulgarian">Bulgarian</option>
+  <option value="Catalan">Catalan</option>
+  <option value="Cambodian">Cambodian</option>
+  <option value="Chinese (Mandarin)">Chinese (Mandarin)</option>
+  <option value="Croatian">Croatian</option>
+  <option value="Czech">Czech</option>
+  <option value="Danish">Danish</option>
+  <option value="Dutch">Dutch</option>
+  <option value="English">English</option>
+  <option value="Estonian">Estonian</option>
+  <option value="Fiji">Fiji</option>
+  <option value="Finnish">Finnish</option>
+  <option value="French">French</option>
+  <option value="Georgian">Georgian</option>
+  <option value="German">German</option>
+  <option value="Greek">Greek</option>
+  <option value="Gujarati">Gujarati</option>
+  <option value="Hebrew">Hebrew</option>
+  <option value="Hindi">Hindi</option>
+  <option value="Hungarian">Hungarian</option>
+  <option value="Icelandic">Icelandic</option>
+  <option value="Indonesian">Indonesian</option>
+  <option value="Irish">Irish</option>
+  <option value="Italian">Italian</option>
+  <option value="Japanese">Japanese</option>
+  <option value="Javanese">Javanese</option>
+  <option value="kannada">kannada</option>
+  <option value="Korean">Korean</option>
+  <option value="Latin">Latin</option>
+  <option value="Latvian">Latvian</option>
+  <option value="Lithuanian">Lithuanian</option>
+  <option value="Macedonian">Macedonian</option>
+  <option value="Malay">Malay</option>
+  <option value="Malayalam">Malayalam</option>
+  <option value="Maltese">Maltese</option>
+  <option value="Maori">Maori</option>
+  <option value="Marathi">Marathi</option>
+  <option value="Mongolian">Mongolian</option>
+  <option value="Nepali">Nepali</option>
+  <option value="Norwegian">Norwegian</option>
+  <option value="Persian">Persian</option>
+  <option value="Polish">Polish</option>
+  <option value="Portuguese">Portuguese</option>
+  <option value="Punjabi">Punjabi</option>
+  <option value="Quechua">Quechua</option>
+  <option value="Romanian">Romanian</option>
+  <option value="Russian">Russian</option>
+  <option value="Samoan">Samoan</option>
+  <option value="Serbian">Serbian</option>
+  <option value="Slovak">Slovak</option>
+  <option value="Slovenian">Slovenian</option>
+  <option value="Spanish">Spanish</option>
+  <option value="Swahili">Swahili</option>
+  <option value="Swedish ">Swedish </option>
+  <option value="Tamil">Tamil</option>
+  <option value="Tatar">Tatar</option>
+  <option value="Telugu">Telugu</option>
+  <option value="Thai">Thai</option>
+  <option value="Tibetan">Tibetan</option>
+  <option value="Tonga">Tonga</option>
+  <option value="Turkish">Turkish</option>
+  <option value="Ukrainian">Ukrainian</option>
+  <option value="Urdu">Urdu</option>
+  <option value="Uzbek">Uzbek</option>
+  <option value="Vietnamese">Vietnamese</option>
+  <option value="Welsh">Welsh</option>
+  <option value="Xhosa">Xhosa</option>
+                            </select>
+                            <label>LANGUAGE</label>
+                        </div>
+                        <div id="contentP7">
+                            <select>
+                                <option selected disabled></option>
+                                <option value="">NONE</option>
+                                <option value="">BY EMAIL</option>
+                            </select>
+                            <label>NOTIFICATIONS</label>
+                        </div>
+                    </div>
+                   <div>
+                    <div class="loginemail">
+                        <b>LOGIN EMAIL & PASSWORD</b>
+                    </div>
+                </div> 
+            </form>
+            </div>
+                    <div>
+                     <button id="edit" onclick="myFunctionE()">&nbsp;&nbsp;&nbsp;&nbsp;EDIT&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                    </div>
+                   
+                <div id="myLogin" class="loginemailpage">
+                    <b>LOGIN EMAIL & PASSWORD</b>
+             <div class="loginleft">
+                <form>
+                    <div class="containerL1">
+                        <div id="contentL1">
+                            <input class="" type="email">
+                            <label>EMAIL</label>
+                        </div>
+                        <div id="contentL2">
+                            <input class="" type="password">
+                            <label>CURRENT PASSWORD</label>
+                        </div>
+                        <div id="contentL3">
+                            <input class="" type="password" placeholder="Enter Password">
+                            <label>NEW PASSWORD</label>
+                        </div>
+                        <div id="contentL4">
+                            <input class="" type="password" placeholder="Enter Password">
+                            <label>RE-TYPE NEW PASSWORD</label>
+                        </div>
+                    </div>
+                </form>     
+            </div>
+            <div class="saveandcance2">
+                <button id="reset2" type="reset" style="color:red;"><a>&nbsp;CANCEL&nbsp;</a></button>
+                <button id="save2" type="submit" style="color:green;"><a>&nbsp;SAVE&nbsp;</a></button>
+            </div>
+            <!-- <div class="loginright">
+                <p>Please make sure your password meets all requirements mentioned below.</p>
+                <p>Also, your new password cannot be any of your previous 12 passwords</p>
+                <div class="passconditions">
+                   <p>1. Has one or more numbers</p>
+                   <p>2. Has one or more uppercase letters</p> 
+                   <p>3. Has one or more lowercase letters</p>
+                   <p>4. Has one or more special characters</p>
+                   <p>5. Cannot contain the email:</p>
+                </div>
+            </div> -->
+          </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script type="text/javascript">
+        $(document).on('click',' ul a li',function(){
+            $(this).addClass('active1').siblings().removeClass('active1')
+        })
+    </script>
+    <script src="../Required/Navigation.js"></script>
+   <script src="homebox.js"></script>
+   <script src="LoginEdit.js"></script>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,115 @@
+.section {
+  margin-bottom: 5px;
+
+}
+
+.section-header {
+  display: grid;
+  grid-template-columns: 0.5fr 9fr 1fr;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #216c98;
+  height: 60px;
+  border: 1px solid #ccc;
+}
+
+.section-number {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  height: 60px;
+  top: 20px;
+  position: relative;
+}
+
+#section-delete-btn {
+  color: red;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.section-actions {
+  display: flex;
+  align-items: center;
+}
+
+#guideInput {
+  height: 58px;
+  width: 100%;
+  font-size: medium;
+  font-weight: lighter;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  border-left: 1px solid #ccc;
+}
+
+.section-hide-checkbox {
+  margin-right: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+#add-section-btn {
+  cursor: pointer;
+    margin: 5px;
+
+  }
+  
+  .section-header {
+    display: grid;
+    grid-template-columns: 0.5fr 9fr 1fr;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #216c98;
+    height: 60px;
+    border: 1px solid #ccc;
+  }
+  
+  .section-number {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    height: 60px;
+    top: 20px;
+    position: relative;
+  }
+  
+  #section-delete-btn  {
+    color: red;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .section-actions {
+    display: flex;
+    align-items: center;
+  }
+   #guideInput {
+    height:52px;
+    width: 100%;
+    font-size: medium;
+    font-weight: lighter;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    border-left: 1px solid #ccc;
+  }
+  
+  .section-hide-checkbox {
+    margin-right:5px;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  #add-section-btn{
+    cursor: pointer;
+  margin-top: 20px;
+  margin-left: 45%;
+  border: none;
+  background-color: white;
+  color: #216c98;
+
+}
+
+
+
